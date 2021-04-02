@@ -18,6 +18,9 @@ repo_url: https://github.com/idechq/idec-wiki
 
 edit_uri: blob/main/docs/
 
+markdown_extensions:
+    - footnotes
+
 copyright: Copyright &copy; 2021 iDEC | The International Directed Evolution Competition (iDEC) is a Scottish Charitable Incorporate Organisation (SCIO), registered in Scotland, with charity number：SC050826
 
 # This section below can be changed to update the navigation menu of the wiki
