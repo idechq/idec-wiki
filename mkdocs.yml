@@ -1,4 +1,32 @@
-site_name: International Directed Evolution Competition
+# !!! Important: This section controls site behavior and should not be changed without assistance from the web-team
+site_name: iDEC Resources Wiki
+
+theme:
+    name: material
+    logo: img/idec-logo-white-bg.png
+    favicon: img/idec-logo.png
+
+    palette:
+        primary: deep purple
+        accent: deep purple
+
+    features:
+        - header.autohide
+        - navigation.expand
+
+repo_url: https://github.com/idechq/idec-wiki
+
+edit_uri: blob/main/docs/
+
+copyright: Copyright &copy; 2021 iDEC | The International Directed Evolution Competition (iDEC) is a Scottish Charitable Incorporate Organisation (SCIO), registered in Scotland, with charity number：SC050826
+
+# This section below can be changed to update the navigation menu of the wiki
+
 nav:
-  - Home: index.md
-theme: readthedocs
+    - Home: index.md
+    - Introduction: introduction.md
+    - Creating genetic diversity: genetic_diversity.md
+    - Laboratory selection methods: lab_selection_methods.md
+    - Continuous directed evolution methods: cont_de_methods.md
+    - Computational tools: computational_tools.md
+    - Genome Evolution: genome_evolution.md
