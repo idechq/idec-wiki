@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This changelog only covers changes made to the code base on the system.
 Changes to the resources wiki content are not documented here.
 
+## 2021-4-02 14:11 by Trevor
+### Added
+- `CNAME` so that the wiki now points to wiki.idec.io
+### Changed
+- Updated `README.md` for new url
+
 ## 2021-4-02 13:40 by Trevor
 ### Added
 - mkdocs-material site with basic aesthetics
