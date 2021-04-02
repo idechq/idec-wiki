@@ -20,6 +20,32 @@ edit_uri: blob/main/docs/
 
 markdown_extensions:
     - footnotes
+    - attr_list
+    - pymdownx.tabbed
+    - abbr
+    - pymdownx.snippets
+    - pymdownx.arithmatex:
+          generic: true
+    - pymdownx.emoji:
+          emoji_index: !!python/name:materialx.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg
+    - meta
+    - def_list
+    - pymdownx.tasklist:
+          custom_checkbox: true
+    - pymdownx.tasklist:
+          clickable_checkbox: true
+    - pymdownx.smartsymbols
+    - pymdownx.caret
+    - pymdownx.mark
+    - pymdownx.tilde
+
+extra_javascript:
+    - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+    - javascripts/tables.js
+    - javascripts/config.js
+    - https://polyfill.io/v3/polyfill.min.js?features=es6
+    - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 copyright: Copyright &copy; 2021 iDEC | The International Directed Evolution Competition (iDEC) is a Scottish Charitable Incorporate Organisation (SCIO), registered in Scotland, with charity number：SC050826
 

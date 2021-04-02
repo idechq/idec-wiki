@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This changelog only covers changes made to the code base on the system.
 Changes to the resources wiki content are not documented here.
 
+## 2021-4-02 15:44 by Trevor
+### Added
+- Further enabled multiple features in in `mkdocs.yml`.
+
 ## 2021-4-02 15:35 by Trevor
 ### Added
 - `markdown_extensions: -footnote` in `mkdocs.yml` to enable insertion of references
