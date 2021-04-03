@@ -67,5 +67,3 @@ gentis tot ipse redit, passu arvis: qui nonne. Malum per ossa forte ministeriis
 perdet puppim miseroque obscurus, suras? Duro nacta laudatos gaudete latos,
 artes, non metu estque si sol. Limite pater Phaethontida freta di arcus furor
 ecce sitvs!
-
-![iDEC Logo](./img/idec-logo.png)
