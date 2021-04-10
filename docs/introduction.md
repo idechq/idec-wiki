@@ -1,6 +1,6 @@
-#Introduction
+# Introduction
 
-Directed evolution (DE) aims to improve the activity of biological entities (molecules, bacterial strains etc.) via exploiting principles of Darwinian selection in a controlled laboratory environment. DE is performed in rounds by repeating two main steps: gene(s) diversification and selection of the molecules encoded by them for the desired property. The experiments can be done in cells (bacteria, yeast or mammalian), or using various in vitro systems (e.g. transcription-translation).
+Directed evolution (DE) aims to improve the activity of biological entities (molecules, bacterial strains etc.) via exploiting principles of Darwinian selection in a controlled laboratory environment. DE is performed in rounds by repeating two main steps: diversification of a genetic material and selection of the molecules encoded by it for the desired property. The evolution experiments spans from the living cells, their consortia (ecosystems) to heavily reduced in complexity *in vitro* systems (e.g. transcription-translation).
 
 Importantly, DE is inherently probabilistic, and hence its exact outcomes are unpredictable, just as natural evolution is. Thus, DE strategies are perfectly fit for harnessing biological complexity whereby unpredictability and irrationality, however still unwanted, are increasingly considered to be an asset. Indeed, random search and feedback controls, which are inherent parts of any DE approach are the only language nature engages. Development of the DE field creates possibilities to work with living systems, guiding their genetic algorithms, by following rules of these systems as opposed to controlling them. From this point of view, DE is may be the furthest from rational engineering in the realm of synthetic biology.
 
@@ -8,35 +8,48 @@ A thorough understanding of the DE experimental design is required to increase t
 
 Importantly, This page is not intended to be complete but rather to be a welcoming and informative resource for you to learn more about the marvellous field called Directed Evolution!
 
-DE field is vast and its subjects and protocols are not uniform. We classified DE methods according to the best of our knowledge and it reflects our vision. Importantly, we do not differentiate between true DE (which is an umbrella term for various approaches) and the selection strategies. We subdivided DE protocols into two large divisions: methods for generation of genetic diversity and methods for selections. The latter is further subdivided into the selection of binders and the selection of enzymes. Also, we could not ignore two important fields of research: continuous DE and Genomes evolution. And finally, we added  a chapter on computational tools for genetic library design and characterisation
+DE field is vast and its subjects and protocols are not uniform. We classified DE methods according to the best of our knowledge and thus it reflects our *vision*. Importantly, we do not differentiate between true DE (which is an umbrella term for various approaches) and the selection strategies. We subdivided DE protocols into two large divisions: methods for generation of genetic diversity and methods for selections.
 
-Creating genetic diversity 
-Error-prone PCR
-Comprehensive Codon Mutagenesis
-Recombinatorial and gene and domain shuffling
-Laboratory Selection methods
-Selection of binders
-Phage display
-Cell surface display (FACS FADS)
-Ribosome display
-cDNA display & mRNA display
-CIS display
-SELEX
-Selection enzymes and reporters
-Screening based on survival 
-Selection based on biochemical assays
-Plate screening
-Pico and femtoliter reactors
-Selection using in vitro compartmentalisation
-FACS FADS
-Continuous directed evolution methods
-Phage-assisted continuous evolution (PACE, PANCE)
-In situ targeted mutagenesis and continuous evolution (EvolvR, OrthoRep)
-Computational tools for library creation, design and analysis
-Genome evolution
-MAGE
-Adaptive Laboratory Evolution
-Scramble
+```mermaid
+graph LR
+A(Directed Evolution resources) --> B(discrete protocols)
+A --> C(continuous protocols)
+B --> D(producing genetic diversity)
+B --> E(selection methods)
+E --> F(for enzymes)
+E --> G(for binders)
+A --> H(Genomes evolution)
+A --> I(computational tools)
+```
+The latter is further subdivided into the selection of binders and the selection of enzymes. Also, we could not ignore two important fields of research: continuous DE and Genomes evolution. And finally, we added  a chapter on computational tools for genetic library design and characterisation
+
+- Creating genetic diversity 
+-- Error-prone PCR
+-- Comprehensive Codon Mutagenesis
+-- Recombinatorial gene and domain shuffling
+- Laboratory Selection methods
+  - Selection of binders
+    - Phage display
+    - Cell surface display (FACS FADS)
+    - Ribosome display
+    - cDNA display & mRNA display
+    - CIS display
+    - SELE
+  - Selection enzymes and reporters
+    - Screening based on survival 
+    - Selection based on biochemical assays
+    - Plate screening
+    - Pico and femtoliter reactors
+    - Selection using *in vitro* compartmentalisation
+    - FACS FADS
+- Continuous directed evolution methods
+-- Phage-assisted continuous evolution (PACE, PANCE)
+-- *In situ* targeted mutagenesis and continuous evolution (EvolvR, OrthoRep)
+- Computational tools for library creation, design and analysis
+- Genome evolution
+-- MAGE
+-- Adaptive Laboratory Evolution
+-- Scramble
 
 
 
