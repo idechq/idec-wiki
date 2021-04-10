@@ -23,33 +23,30 @@ A --> I(computational tools)
 ```
 The latter is further subdivided into the selection of binders and the selection of enzymes. Also, we could not ignore two important fields of research: continuous DE and Genomes evolution. And finally, we added  a chapter on computational tools for genetic library design and characterisation
 
-- Creating genetic diversity 
--- Error-prone PCR
--- Comprehensive Codon Mutagenesis
--- Recombinatorial gene and domain shuffling
+- [Creating genetic diversity](genetic_diversity.md)
+-- [Error-prone PCR](epPCR.md)
+-- [Comprehensive Codon Mutagenesis](CCM.md)
+-- [Recombinatorial gene and domain shuffling](gene_shuttling.md)
 - Laboratory Selection methods
-  - Selection of binders
-    - Phage display
-    - Cell surface display (FACS FADS)
-    - Ribosome display
-    - cDNA display & mRNA display
-    - CIS display
-    - SELE
-  - Selection enzymes and reporters
-    - Screening based on survival 
-    - Selection based on biochemical assays
-    - Plate screening
-    - Pico and femtoliter reactors
-    - Selection using *in vitro* compartmentalisation
-    - FACS FADS
-- Continuous directed evolution methods
--- Phage-assisted continuous evolution (PACE, PANCE)
--- *In situ* targeted mutagenesis and continuous evolution (EvolvR, OrthoRep)
-- Computational tools for library creation, design and analysis
-- Genome evolution
--- MAGE
--- Adaptive Laboratory Evolution
--- Scramble
+  - [Selection of binders](binders.md)
+    - [Phage display](phage_display.md)
+    - [Cell surface display](FACS_FADS.md)
+    - [Ribosome display](ribodisplay.md)
+    - [cDNA display & mRNA display](mRNAdisplay.md)
+    - [CIS display](cisdisplay.md)
+    - [SELEX](selex.md)
+  - [Selection enzymes and reporters](enzymes.md)
+    - [Screening based on survival](survival.md) 
+    - [Selection based on biochemical assays](biochem.md)
+    - [Selection using *in vitro* compartmentalisation](CBL.md)
+- [Continuous directed evolution methods](continuous.md)
+-- [Phage-assisted continuous evolution](PACE_PANCE.md)
+-- [*In situ* targeted mutagenesis (EvolvR, OrthoRep)](insitu_mut.md)
+- [Computational tools for library creation, design and analysis](computational.md)
+- [Genome evolution](genomes.md)
+-- [MAGE](mage.md)
+-- [Adaptive Laboratory Evolution](ALE.md)
+-- [Scramble](scramble.md)
 
 
 
