@@ -35,7 +35,7 @@ The latter is further subdivided into the selection of binders and the selection
         - [CIS display](cisdisplay.md)
         - [SELEX](selex.md)
   - [Selection enzymes and reporters](enzymes.md)
-    - [Screening based on survival](survival.md) 
+    - [Screening based on survival](survival.md)
     - [Selection based on biochemical assays](biochem.md)
     - [Selection using *in vitro* compartmentalisation](CBL.md)
 - [Continuous directed evolution methods](cont_de_methods.md)
@@ -46,7 +46,3 @@ The latter is further subdivided into the selection of binders and the selection
 - [MAGE](mage.md)
 - [Adaptive Laboratory Evolution](ALE.md)
 - [Scramble](scramble.md)
-
-
-
-
