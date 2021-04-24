@@ -34,7 +34,7 @@ The latter is further subdivided into the selection of binders and the selection
         - [cDNA display & mRNA display](mRNAdisplay.md)
         - [CIS display](cisdisplay.md)
         - [SELEX](selex.md)
-  - [Selection enzymes and reporters](enzymes.md)
+  - [Selection of enzymes and reporters](enzymes.md)
     - [Screening based on survival](survival.md)
     - [Selection based on biochemical assays](biochem.md)
     - [Selection using *in vitro* compartmentalisation](CBL.md)
