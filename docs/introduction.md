@@ -37,7 +37,7 @@ The latter is further subdivided into the selection of binders and the selection
   - [Selection of enzymes and reporters](enzymes.md)
     - [Screening based on survival](survival.md)
     - [Selection based on biochemical assays](biochem.md)
-    - [Selection using *in vitro* compartmentalisation](CBL.md)
+    - [Selection using *in vitro* compartmentalisation](CSR_SBL.md)
 - [Continuous directed evolution methods](cont_de_methods.md)
 - [Phage-assisted continuous evolution](PACE_PANCE.md)
 - [*In situ* targeted mutagenesis (EvolvR, OrthoRep)](insitu_mut.md)
