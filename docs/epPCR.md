@@ -5,6 +5,7 @@ Generation of a maximally diverse gene library is particularly important when em
  
 ## The principles of epPCR
 Error-prone PCR protocols are modifications of standard PCR methods, designed to alter and enhance the natural error rate of the polymerase. There are many ways to control the mutation rate of epPCR.
+
 1. EpPCR reactions typically contain higher concentrations of MgCl2 (7 mM) compared to basic PCR reactions (1.5 mM), in order to stabilize non-complementary pairs.(Ling et al., 1991)
 2. MnCl2 can also be added to increase the error-rate.(Lin-Goerke, Robbins & Burczak, 1997)
 3. Other ways of modifying mutation rate include varying the ratios of nucleotides in the reaction or including a nucleotide analog such as 8-oxo-dGTP or dITP. Mutation frequencies from 0.11 to 2% (1 to 20 nucleotides per 1 kb) have been achieved simply by varying the nucleotide ratio and the amount of MnCl2 in the PCR reaction.(Fromant, Blanquet & Plateau, 1995)
