@@ -11,6 +11,9 @@ Error-prone PCR protocols are modifications of standard PCR methods, designed to
 - The number of genes that contain a mutation can also be modified by changing the number of effective doublings by increasing/decreasing the number of cycles or by changing the initial template concentration.
 
 ![PCR vs epPCR](idec-wiki/docs/img/epPCR.png)
+![2PCR vs epPCR](docs/img/epPCR.png)
+![3PCR vs epPCR](img/epPCR.png)
+![4PCR vs epPCR](epPCR.png)
 
 An expression system and high-throughput assay should be developed before a library of enzyme variants are generated. epPCR provides access to an almost unlimited number of variants, but generally have a lower hit rate and are therefore better suited to high throughput screening or selection strategies. To take full advantage of the power of error-prone PCR, the assay must be accurate enough to detect small improvements and sensitive enough to detect the low levels of activity typically encountered in the beginning rounds of an evolution experiment.
  
