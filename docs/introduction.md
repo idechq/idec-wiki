@@ -4,6 +4,8 @@ Directed evolution (DE) aims to improve the activity of biological entities (mol
 
 Importantly, DE is inherently probabilistic, and hence its exact outcomes are unpredictable, just as natural evolution is. Thus, DE strategies are perfectly fit for harnessing biological complexity whereby unpredictability and irrationality, however still unwanted, are increasingly considered to be an asset. Indeed, random search and feedback controls, which are inherent parts of any DE approach are the only language nature engages. Development of the DE field creates possibilities to work with living systems, guiding their genetic algorithms, by following rules of these systems as opposed to controlling them. From this point of view, DE is may be the furthest from rational engineering in the realm of synthetic biology.
 
+![Enzyme_evolution](img/enzyme_evolution.png)
+
 A thorough understanding of the DE experimental design is required to increase the chances for its successful implementation. This resource is here to help you with this. It gives a basic overview of the types of DE experiments, their experimental logic, ways to create and characterise genetic libraries, design selection schemes and perform final analysis.
 
 Importantly, This page is not intended to be complete but rather to be a welcoming and informative resource for you to learn more about the marvellous field called Directed Evolution!
