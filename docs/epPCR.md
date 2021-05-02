@@ -11,6 +11,8 @@ There are many ways to control the mutation rate of epPCR.
 3. Other ways of modifying mutation rate include varying the ratios of nucleotides in the reaction or including a nucleotide analog such as 8-oxo-dGTP or dITP. Mutation frequencies from 0.11 to 2% (1 to 20 nucleotides per 1 kb) have been achieved simply by varying the nucleotide ratio and the amount of MnCl2 in the PCR reaction.(Fromant, Blanquet & Plateau, 1995)
 4. The number of genes that contain a mutation can also be modified by changing the number of effective doublings by increasing/decreasing the number of cycles or by changing the initial template concentration.
 
+![epPCR.svg](/docs/img/epPCR.svg =700x600)
+
 An expression system and high-throughput assay should be developed before a library of enzyme variants are generated. epPCR provides access to an almost unlimited number of variants, but generally have a lower hit rate and are therefore better suited to high throughput screening or selection strategies. To take full advantage of the power of error-prone PCR, the assay must be accurate enough to detect small improvements and sensitive enough to detect the low levels of activity typically encountered in the beginning rounds of an evolution experiment.
  
 # The procedures of epPCR
