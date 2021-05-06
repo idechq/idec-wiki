@@ -60,34 +60,36 @@ nav:
   - Home: index.md
   - Resources:
       - Introduction:
-          - introduction.md
+          - resources/introduction.md
       - Creating genetic diversity:
-          - genetic_diversity.md
-          - Error-prone PCR: epPCR.md
-          - Recombinatorial gene and domain shuffling: gene_shuttling.md
+          - resources/genetic_diversity.md
+          - Error-prone PCR: resources/epPCR.md
+          - Recombinatorial gene and domain shuffling: resources/gene_shuttling.md
       - Laboratory selection methods:
-          - lab_selection_methods.md
+          - resources/lab_selection_methods.md
           - Selection of binders:
-              - binders.md
-              - Phage display: phage_display.md
-              - Cell surface display: FACS_FADS.md
-              - Ribosome display: ribodisplay.md
-              - cDNA display & mRNA display: mRNAdisplay.md
-              - CIS display: cisdisplay.md
-              - SELEX: selex.md
+              - resources/binders.md
+              - Phage display: resources/phage_display.md
+              - Cell surface display: resources/FACS_FADS.md
+              - Ribosome display: resources/ribodisplay.md
+              - cDNA display & mRNA display: resources/mRNAdisplay.md
+              - CIS display: resources/cisdisplay.md
+              - SELEX: resources/selex.md
           - Selection of enzymes and reporters:
-              - enzymes.md
-              - By survival: survival.md
-              - By biochemical assays: biochem.md
-              - By in vitro compartmentalisation: CSR_SBL.md
+              - resources/enzymes.md
+              - By survival: resources/survival.md
+              - By biochemical assays: resources/biochem.md
+              - By in vitro compartmentalisation: resources/CSR_SBL.md
       - Continuous directed evolution methods:
-          - cont_de_methods.md
-          - PACE: PACE_PANCE.md
-          - In situ targeted mutagenesis: insitu_mut.md
+          - resources/cont_de_methods.md
+          - PACE: resources/PACE_PANCE.md
+          - In situ targeted mutagenesis: resources/insitu_mut.md
       - Computational tools:
-          - computational_tools.md
+          - resources/computational_tools.md
       - Genome Evolution:
-          - genome_evolution.md
-          - MAGE: mage.md
-          - Adaptive Laboratory Evolution: ALE.md
-          - Scramble: scramble.md
+          - resources/genome_evolution.md
+          - MAGE: resources/mage.md
+          - Adaptive Laboratory Evolution: resources/ALE.md
+          - Scramble: resources/scramble.md
+  - Team Wiki:
+      - team_wiki/team_wiki_home.md
