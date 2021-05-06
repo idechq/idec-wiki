@@ -8,8 +8,8 @@ This changelog only covers changes made to the code base on the system.
 Changes to the resources wiki content are not documented here.
 
 ## 2021-05-06 11:00 by Trevor
--   Added Plugin mkdocs-section-index plugin to enable section index
--   Updated `.github/workflows/ci.yml` to enable section index on GH pages
+-   Added Plugin mkdocs-section-index plugin to enable section index pages
+-   Updated `.github/workflows/ci.yml` to enable section index pages on GH pages
 
 ## 2021-04-27 20:15 by Trevor
 -   Added Plugin mkdocs-mermaid2-plugin to render mermaid diagrams
