@@ -1,12 +1,10 @@
 # Wiki site for iDEC
 
-Present site url: [wiki.idec.io](https://wiki.idec.io)
+Displayed site url: [wiki.idec.io](https://wiki.idec.io)
 
-Old site url: [idechq.github.io/idec-wiki](https://idechq.github.io/idec-wiki)
+Root url: [idechq.github.io/idec-wiki](https://idechq.github.io/idec-wiki)
 
-This iDEC Wiki is powered by [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/), which is a static site generator. Essentially, information are written in the Markdown language and saved as `.md` files under the `docs` directory. Whenever a commit is pushed to the repository a GitHub action (`.github/workflows/ci.yml`) is carried out to deploy the site to the branch `gh-pages`.
-
-The Markdown language can easily format texts into HTML elements. Writers who are new to Markdown can use editors like [StackEdit](https://stackedit.io).
+This iDEC Wiki is powered by [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/), which is a static site generator. Information are written in the Markdown language and saved as `.md` files under the `docs` directory. Whenever a commit is pushed to the repository a GitHub action (`.github/workflows/ci.yml`) is carried out to deploy the site to the branch `gh-pages`.
 
 ## A Docker container for preview while editing this wiki
 
@@ -29,4 +27,4 @@ Wiki contributors who are familar with Git, GitHub and Python can fork, clone th
 
 For editors who are new to Git, GitHub, Docker, we provide a [step-by-step guide]() to setting up an environemnt on your computer for editing and collaborating.
 
-Editors who are new to the Markdown language can visit [commonmark.org](https://commonmark.org/), where you can pick up the language in as little as 10 minutes.
+Editors who are new to the Markdown language can visit [commonmark.org](https://commonmark.org/), where you can pick up the language in as little as 10 minutes. It is recommended that editors set up a Markdown editor of thier choice. A list of recommendations can be found in a [blog post](https://www.oberlo.co.uk/blog/markdown-editors) written by Oberlo.
