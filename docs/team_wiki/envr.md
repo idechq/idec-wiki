@@ -81,10 +81,10 @@ Docker container. This ensure that you will always get the same environment for 
 7.  Do not close the terminal and return to your desktop
 
 !!! caution  
- If you close the terminal by accident, the following steps will not work.  
- In that case, open a new terminal and start from Step 4 again.
+    If you close the terminal by accident, the following steps will not work.  
+    In that case, open a new terminal and start from Step 4 again.
 
-## Visualize changes in real time
+## Preview
 
 Whether you are using a Docker container or a Python environment, the rest of the steps are the same.
 
