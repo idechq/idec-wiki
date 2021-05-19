@@ -31,9 +31,16 @@ We need to set up an environment for the live server. There are two ways do so:
 
         cd.. Documents/GitHub/team-wiki
 
-2. In the terminal that is already opened, run:  
+2.  Run the command `ls` (Mac) or `dir` (Windows), you should see a list of files and a folder, including:
+
+    - the `docs` folder where .md files are stored, the wiki contents are in the .md files
+    - `mkdocs.yml`, a configuration file
+
+3. Run:  
         
-        mkdocs serve
+        mkdocs serve  
+
+    You should see a message saying that changes are being detected
 
 ## Docker
 
