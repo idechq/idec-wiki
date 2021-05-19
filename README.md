@@ -14,13 +14,17 @@ Wiki contributors who are familar with Git, GitHub and Python can fork, clone th
    (For Windows users, open a PowerShell terminal / a linux distribution through WSL2).
 2. In the terminal, navigate into the `idec-wiki` folder.
 3. Create a Docker Image:  
-   `docker build -t squidfunk/mkdocs-material .`
+
+      docker build -t squidfunk/mkdocs-material .
+   
 4. Set up a local live server:  
-   `docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material`  
+
+      docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material  
+
    If an error message shows up here, please contact us at [support@idechq.org](mailto:support@idechq.org)
-5. Open a browser and connect to:
-   `localhost:8000`  
-   You should now see the wiki site being rendered locally.
+5. Open a browser and connect to `localhost:8000`  
+   You should now see the wiki site being rendered locally.  
+
 6. Hit `Ctrl + C` on your keyboard to exit the live server when done.
 
 ### Step-by-step guide
