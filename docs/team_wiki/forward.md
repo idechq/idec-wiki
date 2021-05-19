@@ -14,6 +14,7 @@ For information on customizing the theme, please see [Material for MkDocs](https
 ## Useful features in Material for MkDocs
 
 In the [mock wiki](https://idec2021.github.io/team-wiki/) for this tutorial, we have a [page](https://idec2021.github.io/team-wiki/useful_features/) demonstrating 3 useful features enabled by default:
+
 - Mathematical equations input by LaTeX
 - Sortable Tables
 - Markdown footnotes for citations
@@ -33,9 +34,9 @@ In this tutorial, you forked the repository `idec2021/team-wiki`, push commits a
 ```yml
 idec2021 / idec-team
 └──user1 / idec-team
-   ├─user2 / idec-team
-   ├─user3 / idec-team
-   └─user4 / idec-team
+    ├─user2 / idec-team
+    ├─user3 / idec-team
+    └─user4 / idec-team
 ```
 
 In this way, it is easier for iDEC HQ to know or guess that a pull request from your lead developer is likely final, and this should reduce the chances of encountering merge conflicts.

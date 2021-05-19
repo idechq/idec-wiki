@@ -99,7 +99,7 @@ nav:
       - Default wiki tutorial:
           - MkDocs & Material for MkDocs: team_wiki/mkdocs.md
           - Fork a repository: team_wiki/fork.md
-          - Docker container for editing: team_wiki/docker.md
+          - Environment for editing: team_wiki/envr.md
           - MkDocs common operations: team_wiki/operations.md
           - Stage, commit and push changes: team_wiki/push.md
           - Submit a pull request: team_wiki/pull_request.md

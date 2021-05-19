@@ -53,7 +53,7 @@ You now have the change saved to both your local and remote repositories. At thi
 
 ## (Optional & Advanced) Deploy the site as a GitHub page on your account
 
-Following the previous section, you now have a copy of the `team-wiki` under your GitHub account, and it is ready to be deployed as a GitHub Page, which is a website hosted by GitHub. If you wish to, you can enable GitHub Action and then configure the Page setting under your repository, such that the site is deployed from the "gh-pages" branch. Doing so would create a website that can be accessed at:
+Following the previous section, you now have a copy of the `team-wiki` under your GitHub account, and it is ready to be deployed as a [GitHub Page](https://pages.github.com/), which is a website hosted by GitHub. If you wish to, you can enable GitHub Action and then configure the Page setting under your repository, such that the site is deployed from the "gh-pages" branch. Doing so would create a website that can be accessed at:
 `https://{your username}.github.io/team-wiki/`  
 This allows you to visualize how this site would look from the internet.
 
