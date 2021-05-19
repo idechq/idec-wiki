@@ -175,19 +175,23 @@ Click on any of them and you should see a new tab with the PDF file showing up.
 
 Use of multimedia faciliates scientific communication to the lay public. To embed a video, use of HTML is necessary.
 
-You will have an example video in your local repository.
+You already have a cover image in the repository.  
+Download a sample video from this [link](https://drive.google.com/file/d/1boSkC91DsA2Ueh7IDEcudd-yfaeNPPyQ/view?usp=sharing).  
+Then save the file as `iDEC_video.mp4` under the `docs/assets` directory:
 
 ```yml
 .
 └──docs
-   └─assets
-      └─iDEC_video.mp4 
+   ├─assets
+   │  └─iDEC_video.mp4 
+   └─img
+      └─video_cover.png
 ```
 
 To embed this on the "Home" page, open a text editor, insert the following code into the end of the file `docs/index.md` and save the file.
 
 ```html
-<video controls width="600px" poster="">
+<video controls width="600px" poster="img/video_cover.png">
     <source src="assets/iDEC_video.mp4" type="video/mp4">
 </video>
 ```
