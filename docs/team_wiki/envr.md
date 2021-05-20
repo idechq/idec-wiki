@@ -82,7 +82,7 @@ Docker container. This ensure that you will always get the same environment for 
 
 !!! caution  
     If you close the terminal by accident, the following steps will not work.  
-    In that case, open a new terminal and start from Step 4 again.
+    In that case, open a new terminal and start from Step 1 again.
 
 ## Preview
 
