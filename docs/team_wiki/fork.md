@@ -3,10 +3,12 @@
 Since you will be assigned a GitHub repository for uploading your wiki contents and deploying your team wiki, it is vital that you know how to manage the repository. This tutorial is here to help you familarize with the basic operations in GitHub, assuming no prior experiences.
 
 Instead of using your assigned repository, we will use a mock repository at:  
-[www.github.com/idec2021/team-wiki](https://www.github.com/idec2021/team-wiki)
+[www.github.com/idec2021/team-wiki](https://www.github.com/idec2021/team-wiki)  
 
 The actual wiki for this repository can be found at:  
-[idec2021.github.io/team-wiki](https://idec2021.github.io/team-wiki)
+[idec2021.github.io/team-wiki](https://idec2021.github.io/team-wiki)  
+
+Note that this mock repository resembles your assigned repository for team wiki, but the two repositories, and hence the wikis, are not the same. Nevertheless, the steps covered in this tutorial are applicable to your own repository.  
 
 By the end of this tutorial, you will have a copy of this repository under your own GitHub account _and_ in your own computer.
 
