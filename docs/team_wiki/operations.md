@@ -108,7 +108,8 @@ Two important things to note in `mkdocs.yml`:
     Structuring your Markdown file locations and the navigation menu in the same way is highly recommended, since it will help your collaborators / teammates to find the location of the file much more easily.
 
 !!! note
-    The structure here is only for the illustration of increasing page depth. In general, we recommend that teams limit their wiki page depth to only 2 levels.
+    The structure here is only for the illustration of increasing page depth. In general, we recommend that teams limit their wiki page depth to only 2 levels.  
+    You will also notice that for your assigned team repository, your 2nd level pages are grouped under section headers instead. That is because we enabled the feature [Navigation Sections](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-sections) in `mkdocs.yml`, which is more user-friendly when total number of pages is small.
 
 ## Add an image
 
