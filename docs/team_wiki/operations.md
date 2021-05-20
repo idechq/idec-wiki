@@ -109,7 +109,7 @@ Two important things to note in `mkdocs.yml`:
 
 !!! note
     The structure here is only for the illustration of increasing page depth. In general, we recommend that teams limit their wiki page depth to only 2 levels.  
-    You will also notice that for your assigned team repository, your 2nd level pages are grouped under section headers instead. That is because we enabled the feature [Navigation Sections](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-sections) in `mkdocs.yml`, which is more user-friendly when total number of pages is small.
+    You will also notice that for your assigned team repository, your 2nd level pages are grouped under section headers instead. That is because we enabled the feature [Navigation Sections](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-sections) in `mkdocs.yml`, which is more user-friendly when the total number of pages is small.
 
 ## Add an image
 
