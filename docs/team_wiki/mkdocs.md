@@ -1,6 +1,6 @@
 # MkDocs and Material for MkDocs
 
-By default, the GitHub repository assigned to a team for wiki already contains some wiki contents. These wiki contents are written in the Markdown language and are converted into a wiki site using [MkDocs]() with the [Material for MkDocs]() theme.
+By default, the GitHub repository assigned to a team for wiki already contains some wiki contents. These wiki contents are written in the Markdown language and are converted into a wiki site using [MkDocs](http://mkdocs.org) with the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme.
 
 In this tutorial, we will cover some routines in updating the site, through editing the Markdown (.md) files in the GitHub repository. You do not need to have prior coding experience or experience with Git / GitHub to complete this tutorial.
 
