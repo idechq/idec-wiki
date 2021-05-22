@@ -42,3 +42,13 @@ idec2021 / idec-team
 In this way, it is easier for iDEC HQ to know or guess that a pull request from your lead developer is likely final, and this should reduce the chances of encountering merge conflicts.
 
 Alternatively, have your organization fork the base repository and allow all contributors to commit directly to the forked repository.
+
+## Need help?
+
+Post a message on iDEC 2021's Slack channel, or,  email us at [support@idechq.org](mailto:support@idechq.org) with a subject titled
+
+```
+[Team Wiki] {your issue}
+```  
+
+and we will get back to you as soon as we can.
