@@ -21,11 +21,11 @@ Follow the steps below:
    ![GitHub contribute](img/tutorial_gh_contribute.png){ width=500px }
 
 5. This will lead you to a new page, which shows all differences between your edits and the original files  
-   Make sure that:
-
-   - base repository is `idec2021/team-wiki`
-   - head repository is `{your username}/team-wiki`
-   - branches being compared are both `main`
+   Make sure that:  
+  
+      - base repository is `idec2021/team-wiki`
+      - head repository is `{your username}/team-wiki`
+      - branches being compared are both `main`
 
 6. Click on the `Create pull request` button  
    ![GitHub create pull request 1](img/tutorial_gh_pr1.png){ width=600px }
