@@ -8,7 +8,7 @@ In this tutorial, we will cover some routines in updating the site, through edit
 
 MkDocs is a static site generator. This means that a web developer does not worry about coding the website structure or appearance, and only focuses on writing some plain but structured text files. The static site generator then converts these text files into website contents. In this process, most of the website appearances are already set up, and so the amount of time spent on customizing them is minimized.
 
-<!-- (Insert an illustration here) -->
+![Static Site Generator](img/ssg.png){ width=800px }  
 
 ## Learn Markdown in 10 mins
 
