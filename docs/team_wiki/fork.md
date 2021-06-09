@@ -12,7 +12,7 @@ Note that this mock repository resembles your assigned repository for team wiki,
 
 By the end of this tutorial, you will have a copy of this repository under your own GitHub account _and_ in your own computer.
 
-1. [Register](https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home) for a GitHub account
+1. [Register](https://github.com/join/) for a GitHub account
 
 2. Install [GitHub Desktop](https://desktop.github.com/)
 
@@ -23,7 +23,7 @@ By the end of this tutorial, you will have a copy of this repository under your 
    ![GitHub Desktop Login](img/instructions_screenshots_gh_desktop_login.png){ width=500px }  
     Follow the instructions and sign into your registered account
 
-5. Go to the mock repository page  
+5. Go to the mock repository  
    [github.com/idec2021/team-wiki](https://www.github.com/idec2021/team-wiki)
 
 6. On the upper right corner, you will find the "Fork" button  

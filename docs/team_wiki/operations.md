@@ -162,7 +162,7 @@ So for the relative path `../notebooks/MCLONE001.pdf`, it works as follow:
 2. `../` = goes up 1 level to `docs`
 3. `notebooks/MCLONE001.pdf` = goes into the `notebooks` folder and locate the `MCLONE001.pdf` file.
   
-This relative path will work both on your location machine as well as the deployed GitHub Page.
+This relative path will work both on your location machine as well as the deployed GitHub Pages.
 
 Return to the browser and go to "Notebook" page, you will now find two links.
 Click on any of them and you should see a new tab with the PDF file showing up.
