@@ -96,6 +96,8 @@ nav:
   - Team Wiki:
       - List of team wikis: team_wiki/wiki_list.md
       - Setting up your team wiki: team_wiki/setup_wiki.md
+      - Accessing your team wiki repository: team_wiki/access_repo.md
+      - Configuring your GitHub Pages: team_wiki/gh_pages.md
       - Default wiki tutorial:
           - MkDocs & Material for MkDocs: team_wiki/mkdocs.md
           - Fork a repository: team_wiki/fork.md
