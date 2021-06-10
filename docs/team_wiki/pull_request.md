@@ -2,7 +2,7 @@
 
 In the previous sections you made changes to the files in your repository and committed those changes to your repositories, both local and remote. At this point, these changes are yours, and they are not part of the original, HQ maintained wiki repository. This is the same as saying, you have a partially or fully completed wiki in your own hands but it is not submitted to the iDEC HQ yet.
 
-To finalize the submission, you will need to signal to the owner of the original repository (iDEC HQ) that you committed some changes, and those commits are ready to be merged into the original repository. This process is submitting a **pull request**. Typically, when the owner of a repository receive a pull request, the owner reviews the pull request, then decides if the commits should be merged into the original repository. However, since iDEC is using GitHub repositories as means for wiki hosting, we will not review your changes and just accept them as they are. Though, we will only accept pull requests created before but not after a certain deadline. This is how we implement the _wiki freeze_.
+To finalize the submission, you will need to signal to the owner of the original repository (iDEC HQ) that you committed some changes, and those commits are ready to be merged into the original repository. This process is submitting a **pull request**. Typically, when the owner of a repository receive a pull request, the owner reviews the pull request, then decides if the commits should be merged into the original repository.
 
 In this secion, you will create a pull request for the changes you did on your `team-wiki` repository. This process will be basically identical to what your team will do when you submit your official team wiki.
 

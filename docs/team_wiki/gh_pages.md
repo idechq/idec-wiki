@@ -48,6 +48,9 @@ With these information, the following should be done:
     ```  
     and your home page should now be displayed
 
+!!! caution
+    **Do not add a CNAME** to change the domain name of the GitHub Pages. Your wiki site must be deployed at `idec2021.github.io/{your assigned repo}`
+
 ## Deploying the default Material for MkDocs Wiki
 
 If you decide to use the default wiki setup built with Material for MkDocs, you need not do anything as the settings is already configured for you. In case you changed it accidentally, you can always revert to the settings below:  

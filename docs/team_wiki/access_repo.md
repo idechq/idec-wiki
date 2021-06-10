@@ -20,9 +20,14 @@ You will need permission to write directly into and configure settings in your t
 14. Accept the invitation
 15. You can now manage your wiki repository with **[maintain](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization#repository-access-for-each-permission-level)** permission
 
-## Note
+!!! attention
+    You will not be able to join your assigned wiki repository when wiki-freeze commences.
 
-- The join repository function on [reg.idec.io](https://reg.idec.io/accounts/team/) will remain open until the wiki-freeze.
+## Error due to double connections
+
+You cannot connect the same GitHub account more than once to the iDEC Team Portal. If you run into a "Social Login" failure page, it could be due to your attempt to connect your GitHub account again. A potential fix for this issue, is to login to your GitHub account and visit the settings, [applications](https://github.com/settings/applications) configuration. Under **Authorized OAuth Apps**, choose **iDEC Team Portal**, and then **Revoke access**. This will disconnect your GitHub account with the Team Portal and you can try to reconnect again.
+
+## Other issues?
 
 If you run into any issues please contact us in our [Slack workspace iDEC2021](https://idec2021.slack.com).  
   
