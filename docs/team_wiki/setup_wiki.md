@@ -29,7 +29,7 @@ GitHub turns uploaded web contents into a website through its GitHub Pages servi
 
 ## Making using of forks to coordinate your site development
 
-Even though every team member who join their team wiki repository will have nearly full access, we recommend that team members fork their assigned repository (base) under their personal / organizational account. All uploads and edits of wiki contents can then be performed on the forked repository (head). Pull requests can then be submitted to the base, such that changes can be reviewed by the more experienced web developers from the team before those changes are applied.
+Even though every team member who join their team wiki repository will have nearly full access, we recommend that team members fork their assigned repository (base) under their personal / organizational account. All uploads and edits of wiki contents can then be performed on the forked repository (head). Pull requests can then be submitted to the base, such that changes can be reviewed by the more experienced web developers within the team before those changes are applied.
 
 Teams are also encouraged to utilize features like Issues and Projects to keep track of their web development processes.
 

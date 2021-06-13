@@ -12,6 +12,6 @@ MkDocs is a static site generator. This means that a web developer does not worr
 
 ## Learn Markdown in 10 mins
 
-The text files are "structured" with the Markdown language and saved with a `.md` extension. The Markdown language is our way of instructing the site generator of what to do with our texts, like "make this a header", or "here is a list with bullet points". Learning how to write in the Markdown language is absolutely necessary, but it is also easy.
+The text files are "structured" with the Markdown language and saved with a `.md` extension. The Markdown language is the way of instructing the site generator of what to do with our texts, like "make this a header", or "here is a list with bullet points". Learning how to write in the Markdown language is absolutely necessary, but it is also easy.
 
 Please go to [Commonmark.org](https://commonmark.org), read through the Markdown syntax and complete the [10 minutes interative Markdown tutorial](https://commonmark.org/help/tutorial/). Once you are done please proceed to the next section.

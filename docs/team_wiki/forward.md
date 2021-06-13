@@ -27,22 +27,6 @@ Throughout this tutorial we used GitHub Desktop for version control illustration
 
 As you move forward, you may find the [command line interface (CLI) version](https://git-scm.com/downloads) more powerful since it permits automation of tasks.
 
-## Fork a forked repository
-
-In this tutorial, you forked the repository `idec2021/team-wiki`, push commits and submit pull requests to it. When you are dealing with your team repository, it is far better to have only the lead web developer fork your team wiki repository, with other contributing members forking the forked repository. For example, if your team repository is named `idec-team` and `user1` is the lead web developer, your team should fork the repository in the scheme below:
-
-```yml
-idec2021 / idec-team
-└──user1 / idec-team
-    ├─user2 / idec-team
-    ├─user3 / idec-team
-    └─user4 / idec-team
-```
-
-In this way, it is easier for iDEC HQ to know or guess that a pull request from your lead developer is likely final, and this should reduce the chances of encountering merge conflicts.
-
-Alternatively, have your organization fork the base repository and allow all contributors to commit directly to the forked repository.
-
 ## Need help?
 
 Post a message on iDEC 2021's Slack channel, or,  email us at [support@idechq.org](mailto:support@idechq.org) with a subject titled
