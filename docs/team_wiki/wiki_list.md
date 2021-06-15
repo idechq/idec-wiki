@@ -16,8 +16,6 @@ Or, simply click on the hyperlinks in the tables.
 | BNDS_China        | [BNDS_China](https://www.github.com/idec2021/BNDS_China/)               | [idec2021.github.io/BNDS_China](https://idec2021.github.io/BNDS_China)               |
 | OUC               | [OUC](https://www.github.com/idec2021/OUC/)                             | [idec2021.github.io/OUC](https://idec2021.github.io/OUC)                             |
 | UOregon           | [UOregon](https://www.github.com/idec2021/UOregon/)                     | [idec2021.github.io/UOregon](https://idec2021.github.io/UOregon)                     |
-| Doc Cui's of GXMU | [Doc_Cui_s_of_GXMU](https://www.github.com/idec2021/Doc_Cui_s_of_GXMU/) | [idec2021.github.io/Doc_Cui_s_of_GXMU](https://idec2021.github.io/Doc_Cui_s_of_GXMU) |
-| Pioreactor        | [Pioreactor](https://www.github.com/idec2021/Pioreactor/)               | [idec2021.github.io/Pioreactor](https://idec2021.github.io/Pioreactor)               |
 | ED-NAU            | [ED-NAU](https://www.github.com/idec2021/ED-NAU/)                       | [idec2021.github.io/ED-NAU](https://idec2021.github.io/ED-NAU)                       |
 | NEFU_China        | [NEFU_China](https://www.github.com/idec2021/NEFU_China/)               | [idec2021.github.io/NEFU_China](https://idec2021.github.io/NEFU_China)               |
 | OUC-Marine Drugs  | [OUC-Marine_Drugs](https://www.github.com/idec2021/OUC-Marine_Drugs/)   | [idec2021.github.io/OUC-Marine_Drugs](https://idec2021.github.io/OUC-Marine_Drugs)   |
