@@ -1,167 +1,171 @@
 # iDEC – Comprehensive Codon Mutagenesis
  
 ## Introduction
-Deep mutational scanning (DMS) experiments where large combinatorial libraries are coupled to a functional enrichment and DNA is counted using deep sequencing have enabled the generation of information-rich sequence-function maps allowing researchers to comprehensively study the mutational landscape of proteins1. DMS experiments are not directed evolution in the conventional sense as they typically do not evolutionarily optimize a protein for a particular function through multiple rounds of selection. However, DMS experiments leverage many of the same approaches and yield useful insight into mutational landscapes for guiding subsequent directed evolution experiments. DMS experiments also generate large amounts of data that are highly useful for training machine learning models that can be used to guide directed evolution 2.
-DMS has been applied to several types of mutational lesions3 including codon mutations4–6 as well as mutations that alter protein topology, including domain insertion7,8, circular permutation9, and truncation10. DMS experiments commonly analyze comprehensive codon mutagenesis (CCM). CCM is the process of generating combinatorial libraries where the amino acid encoded at each residue location within a protein is randomized to all possible amino acids. 
-CCM libraries can be generated using a variety of techniques. Nicking mutagenesis, codon tiling PCR11, inverse PCR12, transposon mutagenesis7–9 and recently CCM libraries have been generated from pools of synthetic oligos that can be generated in high-throughput using oligo library synthesis (OLS) approaches6,8. Here we present the basic protocols and tips for designing and constructing comprehensive codon mutagenesis libraries and considerations for enrichment and deep sequencing analysis.
+Deep mutational scanning (DMS) experiments where large combinatorial libraries are coupled to a functional enrichment and DNA is counted using deep sequencing have enabled the generation of information-rich sequence-function maps allowing researchers to comprehensively study the mutational landscape of proteins[^1]. DMS experiments are not directed evolution in the conventional sense as they typically do not evolutionarily optimize a protein for a particular function through multiple rounds of selection. However, DMS experiments leverage many of the same approaches and yield useful insight into mutational landscapes for guiding subsequent directed evolution experiments. DMS experiments also generate large amounts of data that are highly useful for training machine learning models that can be used to guide directed evolution[^2].
+DMS has been applied to several types of mutational lesions[^3] including codon mutations[^4],[^5],[^6] as well as mutations that alter protein topology, including domain insertion[^7],[^8], circular permutation[^9], and truncation[^10]. DMS experiments commonly analyze comprehensive codon mutagenesis (CCM). CCM is the process of generating combinatorial libraries where the amino acid encoded at each residue location within a protein is randomized to all possible amino acids. 
+CCM libraries can be generated using a variety of techniques. Nicking mutagenesis, codon tiling PCR11, inverse PCR12, transposon mutagenesis[^7],[^8],[^9] and recently CCM libraries have been generated from pools of synthetic oligos that can be generated in high-throughput using oligo library synthesis (OLS) approaches[^6],[^8]. Here we present the basic protocols and tips for designing and constructing comprehensive codon mutagenesis libraries and considerations for enrichment and deep sequencing analysis.
  
 ## The principles of comprehensive codon mutagenesis
 The basic principle of comprehensive codon mutagenesis is to generate a large library of vectors for expressing protein variants with single point mutations. A sufficient number of vectors are generated such that the library contains a protein variant with a mutation at each of the possible residue positions. 
 
 ## Library Construction
-There are a variety of approaches for generating comprehensive codon mutagenesis libraries that require different levels of resources. Below is a list with general descriptions of many protocols historically used to generate CCM libraries with links to primary literature and detailed protocols. To help decide which approach best fits your lab’s resources each entry contains a summary of the method, challenges and limitations of the method, and examples where this method was used to generate CCM libraries.  
-PFunkel 4
-Summary: 
-This is the original comprehensive codon mutagenesis approach.
-PFunkel was inspired by Kunkel site-directed mutagenesis that leverages  uracil-containing, single-stranded DNA (ssDNA) templates to limit the presence of wild-type vectors carried over in transformations13 as uracil-containing ssDNA is rapidly degraded in bacteria. PFunkel is a modification to this method that increases mutational efficiency from 50-90%  that is achieved using the Kunkle method to nearly 100% using PFunkel. 
-A uracil-containing ssDNA template is generating by propagating phagemid DNA containing the f1 phage origin and target gene in an Escherichia coli dut-1 ung-1 host and infecting the culture with the M13 helper phage and harvesting ssDNA from isolated phage particles. 
-E. coli dut-1 ung-1 contains a heat-sensitive dUTPase and lacks uracil DNA glycosylase activity resulting in the production of uracil-containing DNA. 
-Mutagenic oligonucleotide primers containing desired mutations are phosphorylated using T4 Polynucleotide Kinase (PNK) to enable subsequent ligation of DNA products using Taq ligase
+There are a variety of approaches for generating comprehensive codon mutagenesis libraries that require different levels of resources. Below is a list with general descriptions of many protocols historically used to generate CCM libraries with links to primary literature and detailed protocols. To help decide which approach best fits your lab’s resources each entry contains a summary of the method, challenges and limitations of the method, and examples where this method was used to generate CCM libraries. 
+
+### PFunkel 4
+#### Summary
+This is the original comprehensive codon mutagenesis approach. PFunkel was inspired by Kunkel site-directed mutagenesis that leverages  uracil-containing, single-stranded DNA (ssDNA) templates to limit the presence of wild-type vectors carried over in transformations[^13] as uracil-containing ssDNA is rapidly degraded in bacteria. PFunkel is a modification to this method that increases mutational efficiency from 50-90%  that is achieved using the Kunkle method to nearly 100% using PFunkel. 
+A uracil-containing ssDNA template is generating by propagating phagemid DNA containing the f1 phage origin and target gene in an *Escherichia coli* dut-1 ung-1 host and infecting the culture with the M13 helper phage and harvesting ssDNA from isolated phage particles. 
+*E.coli* dut-1 ung-1 contains a heat-sensitive dUTPase and lacks uracil DNA glycosylase activity resulting in the production of uracil-containing DNA. 
+Mutagenic oligonucleotide primers containing desired mutations are phosphorylated using T4 Polynucleotide Kinase (PNK) to enable subsequent ligation of DNA products using Taq ligase.
 A mutated second strand is generated by mixing the phosphorylated oligonucleotide and the uracil-containing ssDNA template (4:1 molar ratio) along with PfuTurbo Cx DNA polymerase, Taq ligase, DTT, NAD+, and dNTPs. The mixture is then thermocycled to allow for denaturation, annealing, extension and ligation to generate a mutated second strand with a sealed nick. 
 To generate a complementary mutated strand a second oligonucleotide primer that anneals outside of the mutated gene is then added to the reaction and the denaturation, annealing, extension and ligation cycle is repeated. 
 To remove the uracil-containing ssDNA template uracil DNA glycosylase and exonuclease III are added to the reaction to generate nicks at the uracil containing bases and degrade the ssDNA template. 
 DNA is then directly transformed into chemically competent cells or purified and electroporated into electrocompetent cells.
-Close to 100% efficiency for single codon mutations
-This method is highly extensible allowing for
-Multiple codon positions to be targeted simultaneously in a single vector by leveraging multiple mutagenic primers and the inability of PfuTurbo to strand-displace at low extension temperatures (<68C). 
-Single-tube generation of comprehensive codon mutagenesis (CCM) libraries using pools of mutagenic oligos and using a low oligonucleotide primer to ssDNA template ratio (1:20) ensures only a single codon mutation in each vector. Enables ~96-97% of desired mutations to be sampled with no multiple mutations and minimal bias
-Challenges and limitations: 
-Requires a specialized E. coli strain (E. coli dut-1 ung-1) not typically used in cloning workflows
-Requires specialized methods for isolating DNA from phage particles 
-Modifications for isolating ssDNA using QIAGEN Miniprep Spin Kit can be found here 
-Uracil-containing ssDNA yields can vary greatly between templates
-Requires a specialized DNA polymerase that can use uracil-containing templates (PfuTurbo Cx HotStart) 
-Requires additional enzymes not commonly found in cloning workflows (uracil DNA glycosylase)
-Examples(s): 
-CCM of β-lactamase (TEM-1) 4
-CCM of a 40-codon region of the gene encoding levoglucosan kinase (LGK) from Lipomyces starkeyi 14 
-CCM of gene encoding an aliphatic amidase from Pseudomonas aeruginosa (amiE)15
-Inverse PCR 12
-Summary: 
+Method reportedly ddemonstrate close to 100% level opf efficiency for single codon mutations.
+This method is highly extensible allowing for multiple codon positions to be targeted simultaneously in a single vector by leveraging multiple mutagenic primers and the inability of PfuTurbo to strand-displace at low extension temperatures (<68C). 
+Single-tube generation of CCM libraries using pools of mutagenic oligos and using a low oligonucleotide primer to ssDNA template ratio (1:20) ensures only a single codon mutation in each vector. Enables ~96-97% of desired mutations to be sampled with no multiple mutations and minimal bias.
+#### Challenges and limitations
+- The PFunkel method requires a specialized *E.coli* strain (*E.coli* dut-1 ung-1) not typically used in cloning workflows.
+- Requires specialized methods for isolating DNA from phage particles 
+- Uracil-containing ssDNA yields can vary greatly between templates
+- Requires a specialized DNA polymerase that can use uracil-containing templates (PfuTurbo Cx HotStart) 
+- Requires additional enzymes not commonly found in cloning workflows (uracil DNA glycosylase)
+#### Examples(s): 
+- CCM of β-lactamase (TEM-1)[^4]
+- CCM of a 40-codon region of the gene encoding levoglucosan kinase (LGK) from Lipomyces starkeyi[^14]
+- CCM of gene encoding an aliphatic amidase from Pseudomonas aeruginosa (amiE)[^15]
+
+### Inverse PCR[^12]
+#### Summary
 A template dsDNA plasmid is mutagenized by an inverse PCR reaction using adjacent, non-overlapping oligonucleotide primers that are complementary to opposite strands of the template and amplify the entire DNA vector. One of the oligonucleotide primers used in the PCR encodes ‘NNK’ (where N is A/C/G/T and K is G/T in equimolar ratio) at a single codon position within the protein and will randomize the encoded amino acid. The template is then phosphorylated and ligated to yield circular vectors that can be moved into cells for functional selection. 
-This method is highly efficient, generating 90-95% of expected mutant vectors with ~5-10% of vectors containing deletions that are the result of primer synthesis errors. 
-This method only requires materials commonly used in cloning workflows
-Challenges and limitations: 
-PCR can introduce bias into the library due to bias in annealing primers with mismatches. This challenge can be alleviated by introducing the NNK mutation at the 5’ end of one of the oligonucleotide primers. 
-Each inverse PCR reaction is able to comprehensively mutate a single codon within a protein, requiring individual PCR reactions for each codon position in a protein to generate a comprehensive library.
-Large templates can be challenging to work with without introducing random mutations within the template backbone. Can be partially alleviated by using high-fidelity polymerases or by subcloning libraries into clean vector backbones.   
-Example(s): 
-CCM of tumor suppressor phosphatase and tensin homolog (PTEN) and the enzyme thiopurine methyltransferase (TPMT)16
-Programmed allelic series (PALS) mutagenesis 6
-Summary: 
-Uses microarray-synthesized oligonucleotide pools that ‘tile’ the gene to introduce mutations using mutagenic primer extension. 
-Used a uracil-containing template so that template DNA can be selectively degraded. 
-Oligo pool is designed and commercially synthesized
-A series of 8 steps are needed to produce the full mutagenized library
-First library of mutagenic primers are amplified from the oligo pool using a set of adapter sequences and one adapter is removed using a uracil-containing base and USER enzyme. 
-Second a uracil-containing ssDNA template of the sense strand is generated by amplifying the wild-type dsDNA template was PCR amplified using an unphosphorylated forward primer and a 5’-phosphorylated reverse primer along with Kapa HiFi U+ HotStart Ready Mix supplemented with dUTPs to incorporate uracil bases. The antisense strand is degraded using lambda exonuclease. 
-Third the mutagenic oligos are annealed and extended on the wildtype sense template
-Fourth the gene fragment is PCR amplified using an upstream primer and uracil containing oligo adapter that can be degraded along with the wildtype template using USER enzyme.
-Fifth a sense mutagenesis megaprimer is generated by annealing and extending an outer primer
-Sixth a uracil-containing ssDNA template of the antisense strand is generated by amplifying the wild-type dsDNA template was PCR amplified using a 5’-phosphorylated forward primer and an unphosphorylated reverse primer along with Kapa HiFi U+ HotStart Ready Mix supplemented with dUTPs to incorporate uracil bases. The sense strand is degraded using lambda exonuclease. 
-Seventh the mutagenesis megaprimers are annealed and extended on the uracil-containing wildtype antisense template
-Finally in the eighth step the WT template is degraded with USER and the the full length-mutant library is amplified using gene flanking primers
-This library is then subcloned into a suitable expression vector.
-For specific details see Supplementary Figure 1 from citation 6
-Challenges and limitations: 
-Requires specialized enzymes for generating the uracil containing DNA templates (Kapa HiFi U, USER enzyme #M5505)
-Oligo pools can be prohibitively expensive, but can be applied to many genes in tandem. 
-Examples(s): 
-CCM of a 64-codon region of the yeast transcription factor Gal4 gene and CCM of a 393-codon region of the human tumor suppressor p53 gene6
-CCM of a 403-codon region of the catalytic site of a hyperthermophilic DNA polymerase from  Thermococcus kodakarensis. Library was used for directed evolution to improve activity on synthesis of α-L-threofuranosyl nucleic acids (TNA) using a modified PALS approach17
-Nicking mutagenesis 5
-Summary: 
-Overcomes the need for uracil-containing template DNA and some of the specialized enzymes (uracil DNA glycosylase) used by PFunkel and PALS. 
-Selectively nicks double-stranded DNA template using a pair of strand-specific endonucleases (Nt.BbvCI and Nb.BbvCI) that nick wild type template DNA enabling exonucelase III degradation. 
-To generate a single-stranded DNA (ssDNA) template a double-stranded DNA (dsDNA) template is treated with Nt.BbvC that selectively nicks a single strand at the BbvCI restriction site and is treated with exonuclease III and exonuclease I to degrade the nicked strand. 
-Mutagenic oligonucleotide primers containing desired mutations are phosphorylated using T4 Polynucleotide Kinase (PNK) to enable subsequent ligation of DNA products using Taq ligase.
-A mutated second strand is generated by mixing the phosphorylated mutagenic oligonucleotide and the ssDNA template (1:20 molar ratio) along with Phusion DNA polymerase, Taq ligase, DTT, NAD+, and dNTPs. The mixture is then thermocycled to allow for denaturation, annealing, extension and ligation to generate a mutated second strand with a sealed nick. 
-The wild-type ssDNA template is degraded by treating with Nb.BbvCI that selectively nicks the single strand at the BbvCI restriction site and is treated with exonuclease III and exonuclease I to degrade the nicked strand. 
-A secondary oligonucleotide primer that complements the mutated strand is phosphorylated using T4 Polynucleotide Kinase (PNK) to enable subsequent ligation of DNA products using Taq ligase.
-A complementary second strand is generated by mixing the Nb.BbvCI treated mutated stand with the phosphorylated secondary oligonucleotide along with Phusion DNA polymerase, Taq ligase, DTT, NAD+, and dNTPs. The mixture is then thermocycled to allow for denaturation, annealing, extension and ligation to generate a mutated second strand with a sealed nick.
-DNA is purified and used is electroporated into electrocompetent cells. 
-Similar extensibility as that of PFunkel allowing for single, multisite, or single-tube comprehensive codon mutagenesis. 
-Modified to use microarray-synthesized oligo pools instead of individually synthesized oligos18,19 
-Challenges and limitations: 
-Template plasmid must contain a 7-bp BbvCI restriction site to enable nicking strategy.
-Requires specialized restriction enzymes not commonly used in cloning workflows  (Nt.BbvCI, Nb.BbvCI)
-Examples(s): 
-CCM to two 71-codon regions of the gene encoding an aliphatic amidase from Pseudomonas aeruginosa (amiE) and to an 81-codon region of  β-lactamase (TEM-1) using individually synthesized oligos5
-Detailed protocol can be found here
-CCM of the gene encoding an aliphatic amidase from Pseudomonas aeruginosa (amiE), CCM of a 100-codon region of the anti-Influenza human antibody variable heavy gene UCA9, and targeted mutagenesis of the Arabidopsis thaliana gene encoding abscisic acid receptor PYR1 using microarray-synthesized oligo pools18
-Detailed protocol can be found here 
-CCM of the gene encoding the F capsid and the G spike protein from the bacteriophage ΦX174 using microarray-synthesized oligo pools19
-Tiling primers for codon mutagenesis 11
-Summary: 
-This approach involves iterative rounds of low-cycle PCR with pools of mutagenic oligonucleotides that each contain ‘NNN’ triplet at a specific codon site.
-Oligos with a randomized ‘NNN’ nucleotide followed by upstream and downstream regions of the gene such that all primers have similar melting temperatures are generated using a python script
-Two oligo pools are generated one ‘forward-fragement’ set containing primers binding to the sense strand and one ‘reverse-fragment’ set containing primers that bind to the anti-sense strand. These can be commercially ordered as individual primer and then mixed into equimolar pools or can be ordered as oligo pools from a commercial source.
-Two end primers are designed to anneal to the termini of the gene sequence containing BsmBI restriction sites for cloning the library into an expression vector. 
-The entire gene is amplified using the end primers in a 25 thermocycle reaction and agarose gel purified. 
-Two fragment PCR reactions are run for using the purified template. 1) A ‘forward-fragment’ reaction containing the forward mutagenesis primer pool as well as the forward end primer and 2) a ‘reverse-fragment’ reaction containing the reverse mutagenesis primer pool and the reverse end primer. These PCRs are performed for only 7 thermocycles. 
-These PCR products are then diluted 1:4 and used for a ‘joining PCR reaction’ using the two end primers to amplify full length mutant genes. This reaction is performed for 20 thermocycles.
-This joining PCR reaction is repeated up to three times, the number of times this process is repeated will control the number of multiple mutations observed within the gene (see the primer design software README for details).  
-The product of this reaction is purified and cloned into the expression vector using BsmBI. 
-This vector pool is then electroporated into ultracompetent cells. 
-Challenges and limitations: 
-This method generates proteins with a Poisson distribution of codon mutations. Some will have a single mutation while some will contain zero or multiple mutations. If the mean mutation per protein is 1 then 37% of the proteins will contain zero mutations, 37% will have one mutation, and the rest will have multiple mutations. 
-Determining the number of cycles for this process to obtain libraries with desired levels of mutations can require some fine tuning. 
-Examples(s): 
-CCM of the influenza nucleoprotein11
-CCM of the HIV envelope protein20
-CCM of the receptor binding domain of the SARS-CoV-2 spike glycoprotein21
-Plasmid recombineering22
-Summary: 
-An in vivo mutagenesis approach that is amenable to directed evolution work flows. 
-Relies on single-strand recombineering to generate mutations. An extensive review on recombineering and MAGE can be found here 23.
-Mutagenic oligonucleotides are designed to be complementary to the lagging strand of the gene of interest and contain a centrally located ‘NNN’ sequence. 
-Oligonucleotides are then electroporated into the recombineering ready strain containing the WT plasmid.
-Plasmids can then be isolated from the strain or directly enriched for functionality using a selection or screen.
-After one round of plasmid recombineering ~29% of reads contained single amino acid mutations with nearly complete coverage of the possible residue mutations. 61% of the sequences corresponded to wild type sequences.
-Additional rounds of plasmid recombineering can be used to increase the penetrance of mutations and to generate variants with more than one mutation. 
-Can also be targeted to specific regions. 
-Challenges and limitations: 
-Requires a recombineering and MAGE ready strain (for example: EcNR2 [Escherichia coli MG1655 mutS::cat (ybhBbioAB)::[cI857 N(cro-ea59)::tetR-bla]]).
-Yields libraries that contain positional and mismatch bias that are caused by the mechanism of recombineering relying on oligonucleotides annealing to the locus via homology resulting in nonuniform representation of each mutant. 
-Examples(s): 
-CCM of iLOV a 110-residue domain of the light, oxygen, voltage (LOV) domains of the A. thaliana phototropin 2 protein22
-Library Oligo Design and Synthesis Considerations
-	CCM libraries require the in silico design of oligos used for constructing the library of protein expression vectors. There are several available tools that facilitate library design.
-Useful software tools for the design of oligo libraries. 
-CodonTilingPrimers - Jesse Bloom Lab - Fred Hutchinson Cancer Research Center11
-https://github.com/jbloomlab/CodonTilingPrimers  
-SPINE: Saturated Programmable INsertion Engineering - Daniel Schmidt Lab - U. Minnesota8
-(https://github.com/schmidt-lab/SPINE)
-Options for deep insertional scan or deep mutational scan 
-MutationMaker - Merck 24
-https://github.com/Merck/Mutation_Maker 
+- This method is highly efficient, generating 90-95% of expected mutant vectors with ~5-10% of vectors containing deletions that are the result of primer synthesis errors. 
+- This method only requires materials commonly used in cloning workflows
+#### Challenges and limitations
+- PCR can introduce bias into the library due to bias in annealing primers with mismatches. This challenge can be alleviated by introducing the NNK mutation at the 5’ end of one of the oligonucleotide primers. 
+- Each inverse PCR reaction is able to comprehensively mutate a single codon within a protein, requiring individual PCR reactions for each codon position in a protein to generate a comprehensive library.
+- Large templates can be challenging to work with without introducing random mutations within the template backbone. Can be partially alleviated by using high-fidelity polymerases or by subcloning libraries into clean vector backbones.   
+#### Example(s)
+- CCM of tumor suppressor phosphatase and tensin homolog (PTEN) and the enzyme thiopurine methyltransferase (TPMT)[^16]
+
+### Programmed allelic series (PALS) mutagenesis[^6]
+#### Summary
+- Uses microarray-synthesized oligonucleotide pools that ‘tile’ the gene to introduce mutations using mutagenic primer extension. 
+- Uses a uracil-containing template so that template DNA can be selectively degraded. 
+- Oligo pool is designed and commercially synthesized
+- A series of 8 steps are needed to produce the full mutagenized library.
+	- First, library of mutagenic primers are amplified from the oligo pool using a set of adapter sequences and one adapter is removed using a uracil-containing base and USER enzyme. 
+	- Second a uracil-containing ssDNA template of the sense strand is generated by amplifying the wild-type dsDNA template was PCR amplified using an unphosphorylated forward primer and a 5’-phosphorylated reverse primer along with Kapa HiFi U+ HotStart Ready Mix supplemented with dUTPs to incorporate uracil bases. The antisense strand is degraded using lambda exonuclease. 
+	- Third the mutagenic oligos are annealed and extended on the wildtype sense template
+	- Fourth the gene fragment is PCR amplified using an upstream primer and uracil containing oligo adapter that can be degraded along with the wildtype template using USER enzyme.
+	- Fifth a sense mutagenesis megaprimer is generated by annealing and extending an outer primer
+	- Sixth a uracil-containing ssDNA template of the antisense strand is generated by amplifying the wild-type dsDNA template was PCR amplified using a 5’-phosphorylated forward primer and an unphosphorylated reverse primer along with Kapa HiFi U+ HotStart Ready Mix supplemented with dUTPs to incorporate uracil bases. The sense strand is degraded using lambda exonuclease. 
+	- Seventh the mutagenesis megaprimers are annealed and extended on the uracil-containing wildtype antisense template
+	- Finally in the eighth step the WT template is degraded with USER and the the full length-mutant library is amplified using gene flanking primers.This library is then subcloned into a suitable expression vector.
+
+- For specific details see Supplementary Figure 1 from[^6].
+#### Challenges and limitations
+- Requires specialized enzymes for generating the uracil containing DNA templates (Kapa HiFi U, USER enzyme #M5505)
+- Oligo pools can be prohibitively expensive, but can be applied to many genes in tandem. 
+#### Examples(s) 
+- CCM of a 64-codon region of the yeast transcription factor Gal4 gene and CCM of a 393-codon region of the human tumor suppressor p53 gene[^6]
+- CCM of a 403-codon region of the catalytic site of a hyperthermophilic DNA polymerase from  *Thermococcus kodakarensis*. Library was used for directed evolution to improve activity on synthesis of α-L-threofuranosyl nucleic acids (TNA) using a modified PALS approach[^17]
+
+### Nicking mutagenesis[^5]
+#### Summary
+- Overcomes the need for uracil-containing template DNA and some of the specialized enzymes (uracil DNA glycosylase) used by PFunkel and PALS. 
+- Selectively nicks double-stranded DNA template using a pair of strand-specific endonucleases (Nt.BbvCI and Nb.BbvCI) that nick wild type template DNA enabling exonucelase III degradation.
+- To generate a single-stranded DNA (ssDNA) template a double-stranded DNA (dsDNA) template is treated with Nt.BbvC that selectively nicks a single strand at the BbvCI restriction site and is treated with exonuclease III and exonuclease I to degrade the nicked strand. 
+- Mutagenic oligonucleotide primers containing desired mutations are phosphorylated using T4 Polynucleotide Kinase (PNK) to enable subsequent ligation of DNA products using Taq ligase.
+- A mutated second strand is generated by mixing the phosphorylated mutagenic oligonucleotide and the ssDNA template (1:20 molar ratio) along with Phusion DNA polymerase, Taq ligase, DTT, NAD+, and dNTPs. The mixture is then thermocycled to allow for denaturation, annealing, extension and ligation to generate a mutated second strand with a sealed nick. 
+- The wild-type ssDNA template is degraded by treating with Nb.BbvCI that selectively nicks the single strand at the BbvCI restriction site and is treated with exonuclease III and exonuclease I to degrade the nicked strand. 
+- A secondary oligonucleotide primer that complements the mutated strand is phosphorylated using T4 Polynucleotide Kinase (PNK) to enable subsequent ligation of DNA products using Taq ligase.
+- A complementary second strand is generated by mixing the Nb.BbvCI treated mutated stand with the phosphorylated secondary oligonucleotide along with Phusion DNA polymerase, Taq ligase, DTT, NAD+, and dNTPs. The mixture is then thermocycled to allow for denaturation, annealing, extension and ligation to generate a mutated second strand with a sealed nick.
+- DNA is purified and used is electroporated into electrocompetent cells. 
+- Similar extensibility as that of PFunkel allowing for single, multisite, or single-tube comprehensive codon mutagenesis. 
+- Modified to use microarray-synthesized oligo pools instead of individually synthesized oligos[^18],[^19] 
+#### Challenges and limitations
+- Template plasmid must contain a 7-bp BbvCI restriction site to enable nicking strategy.
+- Requires specialized restriction enzymes not commonly used in cloning workflows  (Nt.BbvCI, Nb.BbvCI)
+#### Examples(s) 
+- CCM to two 71-codon regions of the gene encoding an aliphatic amidase from Pseudomonas aeruginosa (amiE) and to an 81-codon region of  β-lactamase (TEM-1) using individually synthesized oligos[^5]
+- Detailed protocol can be found [here](https://protocolexchange.researchsquare.com/article/nprot-5125/v1)
+- CCM of the gene encoding an aliphatic amidase from Pseudomonas aeruginosa (amiE), CCM of a 100-codon region of the anti-Influenza human antibody variable heavy gene UCA9, and targeted mutagenesis of the Arabidopsis thaliana gene encoding abscisic acid receptor PYR1 using microarray-synthesized oligo pools[^18]
+- Detailed protocol can be found [here](https://en.bio-protocol.org/e3697#biaoti34942) 
+- CCM of the gene encoding the F capsid and the G spike protein from the bacteriophage ΦX174 using microarray-synthesized oligo pools[^19]
+
+### Tiling primers for codon mutagenesis[^11]
+#### Summary
+- This approach involves iterative rounds of low-cycle PCR with pools of mutagenic oligonucleotides that each contain ‘NNN’ triplet at a specific codon site.
+- Oligos with a randomized ‘NNN’ nucleotide followed by upstream and downstream regions of the gene such that all primers have similar melting temperatures are generated using a python script
+- Two oligo pools are generated one ‘forward-fragement’ set containing primers binding to the sense strand and one ‘reverse-fragment’ set containing primers that bind to the anti-sense strand. These can be commercially ordered as individual primer and then mixed into equimolar pools or can be ordered as oligo pools from a commercial source.
+- Two end primers are designed to anneal to the termini of the gene sequence containing BsmBI restriction sites for cloning the library into an expression vector. 
+- The entire gene is amplified using the end primers in a 25 thermocycle reaction and agarose gel purified. 
+- Two fragment PCR reactions are run for using the purified template.
+	1) A ‘forward-fragment’ reaction containing the forward mutagenesis primer pool as well as the forward end primer and
+	2) a ‘reverse-fragment’ reaction containing the reverse mutagenesis primer pool and the reverse end primer.
+	These PCRs are performed for only 7 thermocycles. These PCR products are then diluted 1:4 and used for a ‘joining PCR reaction’ using the two end primers to amplify full length mutant genes. This reaction is performed for 20 thermocycles.
+- This joining PCR reaction is repeated up to three times, the number of times this process is repeated will control the number of multiple mutations observed within the gene (see the primer design software README for details).  
+- The product of this reaction is purified and cloned into the expression vector using BsmBI. 
+- This vector pool is then electroporated into ultracompetent cells. 
+#### Challenges and limitations
+- This method generates proteins with a *Poisson distribution* of codon mutations. Some will have a single mutation while some will contain zero or multiple mutations. If the mean mutation per protein is 1 then 37% of the proteins will contain zero mutations, 37% will have one mutation, and the rest will have multiple mutations. 
+- Determining the number of cycles for this process to obtain libraries with desired levels of mutations can require some fine tuning. 
+#### Examples(s)
+- CCM of the influenza nucleoprotein[^11]
+- CCM of the HIV envelope protein[^20]
+- CCM of the receptor binding domain of the SARS-CoV-2 spike glycoprotein[^21]
+
+### Plasmid recombineering[^22]
+#### Summary
+- An *in vivo* mutagenesis approach that is amenable to directed evolution workflows. 
+- Relies on single-strand recombineering to generate mutations. An extensive review on recombineering and MAGE can be found [here](https://www.zotero.org/google-docs/?0VXLEJ)[^23].
+- Mutagenic oligonucleotides are designed to be complementary to the lagging strand of the gene of interest and contain a centrally located ‘NNN’ sequence. 
+- Oligonucleotides are then electroporated into the recombineering ready strain containing the WT plasmid.
+- Plasmids can then be isolated from the strain or directly enriched for functionality using a selection or screen.
+- After one round of plasmid recombineering ~29% of reads contained single amino acid mutations with nearly complete coverage of the possible residue mutations. 61% of the sequences corresponded to wild type sequences.
+- Additional rounds of plasmid recombineering can be used to increase the penetrance of mutations and to generate variants with more than one mutation. 
+- Can also be targeted to specific regions. 
+#### Challenges and limitations
+- Requires a recombineering and MAGE ready [strain](https://www.addgene.org/64052/) (for example: EcNR2 [Escherichia coli MG1655 mutS::cat (ybhBbioAB)::[cI857 N(cro-ea59)::tetR-bla]]).
+- Yields libraries that contain positional and mismatch bias that are caused by the mechanism of recombineering relying on oligonucleotides annealing to the locus via homology resulting in nonuniform representation of each mutant. 
+#### Examples(s)
+- CCM of iLOV a 110-residue domain of the light, oxygen, voltage (LOV) domains of the *A.thaliana* phototropin 2 protein[^22]
+
+### Library Oligo Design and Synthesis Considerations
+- CCM libraries require the *in silico* design of oligos used for constructing the library of protein expression vectors. There are several available tools that facilitate library design.
+- Useful software tools for the design of oligo libraries. 
+	- [CodonTilingPrimers](https://github.com/jbloomlab/CodonTilingPrimers ) - Jesse Bloom Lab - Fred Hutchinson Cancer Research Center[^11] 
+ 	- [SPINE](https://github.com/schmidt-lab/SPINE): Saturated Programmable INsertion Engineering - Daniel Schmidt Lab - U. Minnesota[^8]
+	- Options for deep insertional scan or deep mutational scan MutationMaker - [Merck 24](https://github.com/Merck/Mutation_Maker)
+
 	Individually synthesized oligos can be purchased from your typical oligo supplier.  Microarray-synthesized oligo library pools can be commercially synthesized and ordered from companies such as Twist Bioscience, Agilent, IDT, GenScript, and others. 
-Links to Protocols and Research Articles
+
+## Links to Protocols and Research Articles
 	
-1.	Fowler, D. M. & Fields, S. Deep mutational scanning: a new style of protein science. Nature Methods 11, 801–807 (2014).
-2.	Yang, K. K., Wu, Z. & Arnold, F. H. Machine-learning-guided directed evolution for protein engineering. Nat Methods 16, 687–694 (2019).
-3.	Higgins, S. A. & Savage, D. F. Protein Science by DNA Sequencing: How Advances in Molecular Biology Are Accelerating Biochemistry. Biochemistry 57, 38–46 (2018).
-4.	Firnberg, E. & Ostermeier, M. PFunkel: Efficient, Expansive, User-Defined Mutagenesis. PLoS ONE 7, e52031 (2012).
-5.	Wrenbeck, E. E. et al. Plasmid-based one-pot saturation mutagenesis. Nat Methods 13, 928–930 (2016).
-6.	Kitzman, J. O., Starita, L. M., Lo, R. S., Fields, S. & Shendure, J. Massively parallel single-amino-acid mutagenesis. Nature Methods 12, 203–206 (2015).
-7.	Nadler, D. C., Morgan, S.-A., Flamholz, A., Kortright, K. E. & Savage, D. F. Rapid construction of metabolite biosensors using domain-insertion profiling. Nat Commun 7, 12266 (2016).
-8.	Coyote-Maestas, W., Nedrud, D., Okorafor, S., He, Y. & Schmidt, D. Targeted insertional mutagenesis libraries for deep domain insertion profiling. Nucleic Acids Research 48, 1010–1010 (2020).
-9.	Atkinson, J. T., Jones, A. M., Zhou, Q. & Silberg, J. J. Circular permutation profiling by deep sequencing libraries created using transposon mutagenesis. Nucleic Acids Research 46, e76–e76 (2018).
-10.	Shams, A. et al. Comprehensive deletion landscape of CRISPR-Cas9 identifies minimal RNA-guided DNA-binding modules. http://biorxiv.org/lookup/doi/10.1101/2020.10.19.344077 (2020) doi:10.1101/2020.10.19.344077.
-11.	Bloom, J. D. An Experimentally Determined Evolutionary Model Dramatically Improves Phylogenetic Fit. Molecular Biology and Evolution 31, 1956–1978 (2014).
-12.	Jain, P. C. & Varadarajan, R. A rapid, efficient, and economical inverse polymerase chain reaction-based method for generating a site saturation mutant library. Analytical Biochemistry 449, 90–98 (2014).
-13.	Kunkel, T. A. Rapid and efficient site-specific mutagenesis without phenotypic selection. Proceedings of the National Academy of Sciences 82, 488–492 (1985).
-14.	Kowalsky, C. A. et al. High-Resolution Sequence-Function Mapping of Full-Length Proteins. PLoS ONE 10, e0118193 (2015).
-15.	Wrenbeck, E. E., Azouz, L. R. & Whitehead, T. A. Single-mutation fitness landscapes for an enzyme on multiple substrates reveal specificity is globally encoded. Nat Commun 8, 15695 (2017).
-16.	Matreyek, K. A. et al. Multiplex assessment of protein variant abundance by massively parallel sequencing. Nat Genet 50, 874–882 (2018).
-17.	Nikoomanzar, A., Vallejo, D., Yik, E. J. & Chaput, J. C. Programmed Allelic Mutagenesis of a DNA Polymerase with Single Amino Acid Resolution. ACS Synth. Biol. 9, 1873–1881 (2020).
-18.	Medina-Cucurella, A. V. et al. User-defined single pot mutagenesis using unamplified oligo pools. Protein Engineering, Design and Selection 32, 41–45 (2019).
-19.	Faber, M. S. et al. Saturation Mutagenesis Genome Engineering of Infective ΦX174 Bacteriophage via Unamplified Oligo Pools and Golden Gate Assembly. ACS Synth. Biol. 9, 125–131 (2020).
-20.	Dingens, A. S., Haddox, H. K., Overbaugh, J. & Bloom, J. D. Comprehensive Mapping of HIV-1 Escape from a Broadly Neutralizing Antibody. Cell Host & Microbe 21, 777-787.e4 (2017).
-21.	Starr, T. N. et al. Deep Mutational Scanning of SARS-CoV-2 Receptor Binding Domain Reveals Constraints on Folding and ACE2 Binding. Cell 182, 1295-1310.e20 (2020).
-22.	Higgins, S. A., Ouonkap, S. V. Y. & Savage, D. F. Rapid and Programmable Protein Mutagenesis Using Plasmid Recombineering. ACS Synth. Biol. 6, 1825–1833 (2017).
-23.	Wannier, T. M. et al. Recombineering and MAGE. Nat Rev Methods Primers 1, 7 (2021).
-24.	Hiraga, K. et al. Mutation Maker, An Open Source Oligo Design Platform for Protein Engineering. http://biorxiv.org/lookup/doi/10.1101/2020.06.26.171819 (2020) doi:10.1101/2020.06.26.171819.
+[^1]:	Fowler, D. M. & Fields, S. Deep mutational scanning: a new style of protein science. Nature Methods 11, 801–807 (2014).
+[^2]:	Yang, K. K., Wu, Z. & Arnold, F. H. Machine-learning-guided directed evolution for protein engineering. Nat Methods 16, 687–694 (2019).
+[^3]:	Higgins, S. A. & Savage, D. F. Protein Science by DNA Sequencing: How Advances in Molecular Biology Are Accelerating Biochemistry. Biochemistry 57, 38–46 (2018).
+[^4]:	Firnberg, E. & Ostermeier, M. PFunkel: Efficient, Expansive, User-Defined Mutagenesis. PLoS ONE 7, e52031 (2012).
+[^5]:	Wrenbeck, E. E. et al. Plasmid-based one-pot saturation mutagenesis. Nat Methods 13, 928–930 (2016).
+[^6]:	Kitzman, J. O., Starita, L. M., Lo, R. S., Fields, S. & Shendure, J. Massively parallel single-amino-acid mutagenesis. Nature Methods 12, 203–206 (2015).
+[^7]:	Nadler, D. C., Morgan, S.-A., Flamholz, A., Kortright, K. E. & Savage, D. F. Rapid construction of metabolite biosensors using domain-insertion profiling. Nat Commun 7, 12266 (2016).
+[^8]:	Coyote-Maestas, W., Nedrud, D., Okorafor, S., He, Y. & Schmidt, D. Targeted insertional mutagenesis libraries for deep domain insertion profiling. Nucleic Acids Research 48, 1010–1010 (2020).
+[^9]:	Atkinson, J. T., Jones, A. M., Zhou, Q. & Silberg, J. J. Circular permutation profiling by deep sequencing libraries created using transposon mutagenesis. Nucleic Acids Research 46, e76–e76 (2018).
+[^10]:	Shams, A. et al. Comprehensive deletion landscape of CRISPR-Cas9 identifies minimal RNA-guided DNA-binding modules. http://biorxiv.org/lookup/doi/10.1101/2020.10.19.344077 (2020) doi:10.1101/2020.10.19.344077.
+[^11]:	Bloom, J. D. An Experimentally Determined Evolutionary Model Dramatically Improves Phylogenetic Fit. Molecular Biology and Evolution 31, 1956–1978 (2014).
+[^12]:	Jain, P. C. & Varadarajan, R. A rapid, efficient, and economical inverse polymerase chain reaction-based method for generating a site saturation mutant library. Analytical Biochemistry 449, 90–98 (2014).
+[^13]:	Kunkel, T. A. Rapid and efficient site-specific mutagenesis without phenotypic selection. Proceedings of the National Academy of Sciences 82, 488–492 (1985).
+[^14]:	Kowalsky, C. A. et al. High-Resolution Sequence-Function Mapping of Full-Length Proteins. PLoS ONE 10, e0118193 (2015).
+[^15]:	Wrenbeck, E. E., Azouz, L. R. & Whitehead, T. A. Single-mutation fitness landscapes for an enzyme on multiple substrates reveal specificity is globally encoded. Nat Commun 8, 15695 (2017).
+[^16]:	Matreyek, K. A. et al. Multiplex assessment of protein variant abundance by massively parallel sequencing. Nat Genet 50, 874–882 (2018).
+[^17]:	Nikoomanzar, A., Vallejo, D., Yik, E. J. & Chaput, J. C. Programmed Allelic Mutagenesis of a DNA Polymerase with Single Amino Acid Resolution. ACS Synth. Biol. 9, 1873–1881 (2020).
+[^18]:	Medina-Cucurella, A. V. et al. User-defined single pot mutagenesis using unamplified oligo pools. Protein Engineering, Design and Selection 32, 41–45 (2019).
+[^19]:	Faber, M. S. et al. Saturation Mutagenesis Genome Engineering of Infective ΦX174 Bacteriophage via Unamplified Oligo Pools and Golden Gate Assembly. ACS Synth. Biol. 9, 125–131 (2020).
+[^20]:	Dingens, A. S., Haddox, H. K., Overbaugh, J. & Bloom, J. D. Comprehensive Mapping of HIV-1 Escape from a Broadly Neutralizing Antibody. Cell Host & Microbe 21, 777-787.e4 (2017).
+[^21]:	Starr, T. N. et al. Deep Mutational Scanning of SARS-CoV-2 Receptor Binding Domain Reveals Constraints on Folding and ACE2 Binding. Cell 182, 1295-1310.e20 (2020).
+[^22]:	Higgins, S. A., Ouonkap, S. V. Y. & Savage, D. F. Rapid and Programmable Protein Mutagenesis Using Plasmid Recombineering. ACS Synth. Biol. 6, 1825–1833 (2017).
+[^23]:	Wannier, T. M. et al. Recombineering and MAGE. Nat Rev Methods Primers 1, 7 (2021).
+[^24]:	Hiraga, K. et al. Mutation Maker, An Open Source Oligo Design Platform for Protein Engineering. http://biorxiv.org/lookup/doi/10.1101/2020.06.26.171819 (2020) doi:10.1101/2020.06.26.171819.
 
 
 
