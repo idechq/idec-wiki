@@ -1,6 +1,7 @@
 # Phage-assisted continuous evolution (PACE) and Phage-assisted noncontinuous evolution (PANCE)
+
 ## Introduction
-Phage-assisted continuous evolution (PACE) and its continuous variant, developed by Esvelt et al. 2011. This method offers the possibility to continuously mutate and select proteins with the help of M13 bacteriophages. Effectively, within the PACE process M13 is allowed to propagate whenever the gene of interest (GOI), which is incorporated into the phage genome, is active.
+Phage-assisted continuous evolution (PACE) and its noncontinuous variant (PANCE), developed by Esvelt et al. 2011[^1]. This method offers the possibility to continuously mutate and select proteins with the help of M13 bacteriophages. Effectively, within the PACE process M13 is allowed to propagate whenever the gene of interest (GOI), which is incorporated into the phage genome, is active.
 PACE is one of a few directed evolution methods which are continuous. Non-continuous evolution methods usually start with the diversification of the target, then functional mutants from the library are selected. These functional mutants can then be used as a basis for the next round of diversification to improve their properties. Continuous evolution methods enable an uninterrupted diversification and selection of the target and thus promise faster results. For PACE more than 100 rounds of selection can be performed within 2 weeks (Miller et al. 2020).
 So why don’t we use continuous evolution methods all the time? Continuous evolution methods are usually very complex to set-up. The crucial condition to make continuous evolution work is to apply selection pressure onto the GOI and not to the host organism. Some methods do so by introducing targeted mutagenesis methods (e.g. EvolvR (Halperin et al. 2018) or error-prone DNA-polymerases (Camps et al. 2013) or T7 RNA-polymerase systems (https://www.nature.com/articles/s41587-019-0331-8)). In PACE, the target gene is encoded by an M13 phage and the selection pressure is applied to Escherichia coli cells (Badran et al. 2015).
 So how does PACE work?
@@ -23,13 +24,18 @@ In short: The crucial condition to use PACE is that the functionality of the tar
 Furthermore, the start of the directed evolution process can pose a challenge. When the target protein has little or no activity, even after mutation by the selection plasmid, the phages can be washed out of the continuous system. In this case, an adaption of the selection pressure or a switch to phage-assisted non-continuous evolution (PANCE) are possible choices. PANCE, in general, is probably the easier method when getting started with phage-assisted evolution, since it avoids the set-up of the continuous cultivation set-up.
 
 
-References
+## References
+
+[^1]: Esvelt, K. M., Carlson, J. C. & Liu, D. R. A system for the continuous directed evolution of biomolecules. Nature 472, 499–503 (2011)
+
+
+
 Badran, A. H. & Liu, D. R. In vivo continuous directed evolution. Curr. Opin. Chem. Biol. 24, 1–10 (2015)
 Badran, A. H. et al. Continuous evolution of Bacillus thuringiensis toxins overcomes insect resistance. Nature 533, 58–63 (2016)
 Barbas, C. F. Phage Display: A Laboratory Manual. Cold Spring Harbor Laboratory Press (2001)
 Bryson, D. I. et al. Continuous directed evolution of aminoacyl-tRNA synthetases. Nat. Chem. Biol. 13, 1253–1260 (2017)
 Camps, M., Naukkarinen, J., Johnson, B. P & Loeb, L. A. Targeted gene evolution in Escherichia coli using a highly error-prone DNA polymerase I. PNAS 100 (17), 9727-9732 (2003)
-Esvelt, K. M., Carlson, J. C. & Liu, D. R. A system for the continuous directed evolution of biomolecules. Nature 472, 499–503 (2011)
+
 Halperin, S. O., Tou, C. J., Modavi, C., Schaffer, D. V. &Dueber, J. E. CRISPR-guided DNA polymerases enable diversification of all nucleotides in a tunable window. Nature 560, 248-525 (2018)
 Hu, J. H. et al. Evolved Cas9 variants with broad PAM compatibility and high DNA specificity. Nature 556, 57–63 (2018)
 Hubbard, B. P. et al. Continuous directed evolution of DNA-binding proteins to improve TALEN specificity. Nat. Methods 12, 939–942 (2015)
