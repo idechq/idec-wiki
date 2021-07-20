@@ -1,4 +1,4 @@
-# Recombinatorial and gene and domain shuffling
+# Recombinatorial gene and domain shuffling
 
 ## Introduction
 DNA shuffling is an established recombinatorial method that was originally developed to increase the speed of directed evolution experiments beyond what could be accomplished using error-prone PCR alone. To achieve this, mutated copies of a protein-coding sequence are fragmented with DNase I or restriction enzyme and the fragments are then reassembled in a PCR without primers. 
