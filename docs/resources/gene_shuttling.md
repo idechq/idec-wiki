@@ -3,7 +3,7 @@
 ## Introduction
 DNA shuffling is an established recombinatorial method that was originally developed to increase the speed of directed evolution experiments beyond what could be accomplished using error-prone PCR alone. To achieve this, mutated copies of a protein-coding sequence are fragmented with DNase I or restriction enzyme and the fragments are then reassembled in a PCR without primers. 
 
-## In Vitro Homologous Recombination
+## *In Vitro* Homologous Recombination
 
 DNA shuffling was the first reported method of *in vitro* recombination. DNAse I is first used to randomly fragment the parental genes. Then, provided there is sufficient sequence similarity between overlapping regions of DNA fragments from different parents, the fragments can anneal to one another and reassemble into a full-length gene using a primer-less PCR. Depending on the total gene size, the degree of sequence similarity between parental DNA strands, and desired number of crossovers, fragment sizes after DNAse I treatment can vary from as low as 10–50 bp to greater than 1 kb. 
 

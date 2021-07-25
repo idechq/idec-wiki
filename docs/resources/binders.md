@@ -10,7 +10,7 @@ In the case of selection *in vivo*, genotype (plasmid or genomic trait) is natur
 
 The *in vitro* selection methods have the following advantages:
 
-- Libraries with up to 10^15 mutants can be selected (except in those where DNA is entrapped in vesicles, where this diversity is down to 10^9 as only a single DNA molecule per vesicle is allowed)
+- Libraries with up to 10<sup>15</sup> mutants can be selected (except in those where DNA is entrapped in vesicles, where this diversity is down to 10<sup>9</sup> as only a single DNA molecule per vesicle is allowed)
 - *in vitro* amplification conveniently integrate random mutagenesis into the selection procedure
 - The outcomes may be least biased in copmarison to *in vivo* methods where selection is affected by the physiological state of the cell
 - Selection of unnatural polymers which cannot be replicated in cells such as XNAs is possible.
