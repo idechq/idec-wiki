@@ -12,7 +12,7 @@ Or, simply click on the hyperlinks in the tables.
 
 | Team              | Assigned Repository Name                                                | Wiki Site                                                                            |
 |:------------------|:------------------------------------------------------------------------|:-------------------------------------------------------------------------------------|
-| CSU_CHINA         | [CSU_CHINA](https://www.github.com/idec2021/CSU_CHINA/)                 | [idec2021.github.io/CSU_CHINA/idec/home.html](https://idec2021.github.io/CSU_CHINA/idec/home.html)                 |
+| CSU_CHINA         | [CSU_CHINA](https://www.github.com/idec2021/CSU_CHINA/)                 | [idec2021.github.io/CSU_CHINA/idec/home.html](https://idec2021.github.io/CSU_CHINA/)                 |
 | BNDS_China        | [BNDS_China](https://www.github.com/idec2021/BNDS_China/)               | [idec2021.github.io/BNDS_China](https://idec2021.github.io/BNDS_China)               |
 | OUC               | [OUC](https://www.github.com/idec2021/OUC/)                             | [idec2021.github.io/OUC](https://idec2021.github.io/OUC)                             |
 | UOregon           | [UOregon](https://www.github.com/idec2021/UOregon/)                     | [idec2021.github.io/UOregon](https://idec2021.github.io/UOregon)                     |
