@@ -21,6 +21,9 @@ A team will be given permissions to manage their assigned repository. The permis
 
 ## Accessing and configuring your team repository
 
+!!! caution "Wiki URL"
+    Starting from 2022, all landing pages of the team wikis must be pointed to `https://www.github.com/idec-teams/{assigned repo name}`. Failure to comply will result in disqualification on the Wiki requirement.
+
 The GitHub repositories for teams in 2021 will be hosted under the GitHub Organization "idec2021". Check your assigned repository on the [wiki list](wiki_list.md).
 
 To obtain the permissions for wiki-editing, iDEC team members will need to add themselves as collaborator to the wiki repository. To do so, follow the instructions on our page [Accessing your wiki repository](access_repo.md). Joining as collaborator will grant the user "maintain" permission to the repository.
