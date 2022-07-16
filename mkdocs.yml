@@ -41,11 +41,11 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.keys
   - admonition
-
-plugins:
-  - search
-  - mermaid2
-  - section-index
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
