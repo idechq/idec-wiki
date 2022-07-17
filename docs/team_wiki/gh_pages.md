@@ -28,7 +28,7 @@ With these information, the following should be done:
   
 1. Go to the Pages settings for your wiki repository via the link  
     ```
-    https://www.github.com/idec{year}/{assigned repo name}/settings/pages
+    https://www.github.com/idec-teams/{assigned repo name}/settings/pages
     ```  
     You will see the user interface below:  
     ![GH Pages settings](img/tutorial_gh_pages.png){ width=600px }  
@@ -44,12 +44,12 @@ With these information, the following should be done:
 
 6. Within a few minutes, you should be able to visit  
     ```
-    https://idec{year}.github.io/{assigned repo name}
+    https://idec-teams.github.io/{assigned repo name}
     ```  
     and your home page should now be displayed
 
 !!! caution
-    **Do not add a CNAME** to change the domain name of the GitHub Pages. Your wiki site must be deployed at `idec2021.github.io/{your assigned repo}`
+    **Do not add a CNAME** to change the domain name of the GitHub Pages. Your wiki site must be deployed at `idec-teams.github.io/{your assigned repo}`
 
 ## Deploying the default Material for MkDocs Wiki
 
