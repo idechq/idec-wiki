@@ -1,5 +1,27 @@
 # List of iDEC team wikis
 
+## iDEC 2024
+
+| Team                             | Assigned Repository Name                                                                                         | Wiki Site                                                                                                                        |
+|:---------------------------------|:-----------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------|
+| SUSTech Med                      | [2024_SUSTech Med](https://www.github.com/idec-teams/2024_SUSTech_Med)                                           | [idec-teams.github.io/2024_SUSTech Med](https://idec-teams.github.io/2024_SUSTech_Med)                                           |
+| USTC                             | [2024_USTC](https://www.github.com/idec-teams/2024_USTC)                                                         | [idec-teams.github.io/2024_USTC](https://idec-teams.github.io/2024_USTC)                                                         |
+| CPU_CHINA                        | [2024_CPU_CHINA](https://www.github.com/idec-teams/2024_CPU_CHINA)                                               | [idec-teams.github.io/2024_CPU_CHINA](https://idec-teams.github.io/2024_CPU_CHINA)                                               |
+| NJTECH-CHINA-A                   | [2024_NJTECH-CHINA-A](https://www.github.com/idec-teams/2024_NJTECH-CHINA-A)                                     | [idec-teams.github.io/2024_NJTECH-CHINA-A](https://idec-teams.github.io/2024_NJTECH-CHINA-A)                                     |
+| Evolution Suisse                 | [2024_Evolution Suisse](https://www.github.com/idec-teams/2024_Evolution_Suisse)                                 | [idec-teams.github.io/2024_Evolution Suisse](https://idec-teams.github.io/2024_Evolution_Suisse)                                 |
+| OUC_DE                           | [2024_OUC_DE](https://www.github.com/idec-teams/2024_OUC_DE)                                                     | [idec-teams.github.io/2024_OUC_DE](https://idec-teams.github.io/2024_OUC_DE)                                                     |
+| Northwest Union                  | [2024_Northwest Union](https://www.github.com/idec-teams/2024_Northwest_Union)                                   | [idec-teams.github.io/2024_Northwest Union](https://idec-teams.github.io/2024_Northwest_Union)                                   |
+| SynthImmunol_NMU                 | [2024_SynthImmunol_NMU](https://www.github.com/idec-teams/2024_SynthImmunol_NMU)                                 | [idec-teams.github.io/2024_SynthImmunol_NMU](https://idec-teams.github.io/2024_SynthImmunol_NMU)                                 |
+| iTidetron                        | [2024_iTidetron](https://www.github.com/idec-teams/2024_iTidetron)                                               | [idec-teams.github.io/2024_iTidetron](https://idec-teams.github.io/2024_iTidetron)                                               |
+| Tongji-China                     | [2024_Tongji-China](https://www.github.com/idec-teams/2024_Tongji-China)                                         | [idec-teams.github.io/2024_Tongji-China](https://idec-teams.github.io/2024_Tongji-China)                                         |
+| STU -China                       | [2024_STU -China](https://www.github.com/idec-teams/2024_STU_-China)                                             | [idec-teams.github.io/2024_STU -China](https://idec-teams.github.io/2024_STU_-China)                                             |
+| NEFU_China                       | [2024_NEFU_China](https://www.github.com/idec-teams/2024_NEFU_China)                                             | [idec-teams.github.io/2024_NEFU_China](https://idec-teams.github.io/2024_NEFU_China)                                             |
+| OUC-Marine drugs                 | [2024_OUC-Marine drugs](https://www.github.com/idec-teams/2024_OUC-Marine_drugs)                                 | [idec-teams.github.io/2024_OUC-Marine drugs](https://idec-teams.github.io/2024_OUC-Marine_drugs)                                 |
+| Edinburgh                        | [2024_Edinburgh](https://www.github.com/idec-teams/2024_Edinburgh)                                               | [idec-teams.github.io/2024_Edinburgh](https://idec-teams.github.io/2024_Edinburgh)                                               |
+| NKLII-Evolution-China            | [2024_NKLII-Evolution-China](https://www.github.com/idec-teams/2024_NKLII-Evolution-China)                       | [idec-teams.github.io/2024_NKLII-Evolution-China](https://idec-teams.github.io/2024_NKLII-Evolution-China)                       |
+| NAU-CHINA-DE                     | [2024_NAU-CHINA-DE](https://www.github.com/idec-teams/2024_NAU-CHINA-DE)                                         | [idec-teams.github.io/2024_NAU-CHINA-DE](https://idec-teams.github.io/2024_NAU-CHINA-DE)                                         |
+
+
 ## iDEC 2023
 
 | Team                             | Assigned Repository Name                                                                                         | Wiki Site                                                                                                                        |
