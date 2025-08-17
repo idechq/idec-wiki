@@ -1,5 +1,26 @@
 # List of iDEC team wikis
 
+
+## iDEC 2025
+| Team                             | Assigned Repository Name                                                                                         | Wiki Site                                                                                                                        |
+|:---------------------------------|:-----------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------|
+| McMaster BioDesign               | [2025_McMaster_BioDesign](https://github.com/idec-teams/2025_McMaster_BioDesign)                                    | [idec-teams.github.io/2025_McMaster_BioDesign](https://idec-teams.github.io/2025_McMaster_BioDesign)                                 |
+| OncoStrat_NMU                    | [2025_OncoStrat_NMU](https://github.com/idec-teams/2025_OncoStrat_NMU)                                         | [idec-teams.github.io/2025_OncoStrat_NMU](https://idec-teams.github.io/2025_OncoStrat_NMU)                                         |
+| SynthImmunol_NMU                 | [2025_SynthImmunol_NMU](https://github.com/idec-teams/2025_SynthImmunol_NMU)                                      | [idec-teams.github.io/2025_SynthImmunol_NMU](https://idec-teams.github.io/2025_SynthImmunol_NMU)                                      |
+| Evolution Suisse 2025            | [2025_Evolution Suisse 2025](https://github.com/idec-teams/2025_Evolution_Suisse_2025)                                 | [idec-teams.github.io/2025_Evolution Suisse 2025](https://idec-teams.github.io/2025_Evolution_Suisse_2025)                       |
+| CPU_CHINA                        | [2025_CPU_CHINA](https://github.com/idec-teams/2025_CPU_CHINA)                                             | [idec-teams.github.io/2025_CPU_CHINA](https://idec-teams.github.io/2025_CPU_CHINA)                                             |
+| LZU-MEDICINE-CHINA               | [2025_LZU-MEDICINE-CHINA](https://github.com/idec-teams/2025_LZU-MEDICINE-CHINA)                                    | [idec-teams.github.io/2025_LZU-MEDICINE-CHINA](https://idec-teams.github.io/2025_LZU-MEDICINE-CHINA)                                 |
+| LZDX                             | [2025_LZDX](https://github.com/idec-teams/2025_LZDX)                                                  | [idec-teams.github.io/2025_LZDX](https://idec-teams.github.io/2025_LZDX)                                                  |
+| OUC-Marine drugs                 | [2025_OUC-Marine drugs](https://github.com/idec-teams/2025_OUC-Marine_drugs)                                      | [idec-teams.github.io/2025_OUC-Marine drugs](https://idec-teams.github.io/2025_OUC-Marine_drugs)                                      |
+| OUC-DE                           | [2025_OUC-DE](https://github.com/idec-teams/2025_OUC-DE)                                                | [idec-teams.github.io/2025_OUC-DE](https://idec-teams.github.io/2025_OUC-DE)                                                |
+| PIM-NEBS                         | [2025_PIM-NEBS](https://github.com/idec-teams/2025_PIM-NEBS)                                              | [idec-teams.github.io/2025_PIM-NEBS](https://idec-teams.github.io/2025_PIM-NEBS)                                              |
+| Edinburgh                        | [2025_Edinburgh](https://github.com/idec-teams/2025_Edinburgh)                                             | [idec-teams.github.io/2025_Edinburgh](https://idec-teams.github.io/2025_Edinburgh)                                             |
+| PIM-VCA                          | [2025_PIM-VCA](https://github.com/idec-teams/2025_PIM-VCA)                                               | [idec-teams.github.io/2025_PIM-VCA](https://idec-teams.github.io/2025_PIM-VCA)                                               |
+| Evolution Japan                  | [2025_Evolution Japan](https://github.com/idec-teams/2025_Evolution_Japan)                                       | [idec-teams.github.io/2025_Evolution_Japan](https://idec-teams.github.io/2025_Evolution_Japan)                                       |
+| NEFU-China                       | [2025_NEFU-China](https://github.com/idec-teams/2025_NEFU-China)                                            | [idec-teams.github.io/2025_NEFU-China](https://idec-teams.github.io/2025_NEFU-China)                                            |
+| LZU GANSU                        | [2025_LZU GANSU](https://github.com/idec-teams/2025_LZU_GANSU)                                             | [idec-teams.github.io/2025_LZU_GANSU](https://idec-teams.github.io/2025_LZU_GANSU)                                             |
+
+
 ## iDEC 2024
 
 | Team                             | Assigned Repository Name                                                                                         | Wiki Site                                                                                                                        |
