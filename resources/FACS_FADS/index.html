@@ -1,0 +1,1859 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../phage_display/">
+      
+      
+        <link rel="next" href="../ribodisplay/">
+      
+      
+      <link rel="icon" href="../../img/idec-logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+    
+    
+      
+        <title>Cell surface display - iDEC Resources Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="iDEC Resources Wiki" class="md-header__button md-logo" aria-label="iDEC Resources Wiki" data-md-component="logo">
+      
+  <img src="../../img/idec-logo-white-bg.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            iDEC Resources Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cell surface display
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/idechq/idec-wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../introduction/" class="md-tabs__link">
+          
+  
+  
+  Resources
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../team_wiki/wiki_list/" class="md-tabs__link">
+          
+  
+  
+  Team Wiki
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="iDEC Resources Wiki" class="md-nav__button md-logo" aria-label="iDEC Resources Wiki" data-md-component="logo">
+      
+  <img src="../../img/idec-logo-white-bg.png" alt="logo">
+
+    </a>
+    iDEC Resources Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/idechq/idec-wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Resources
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Introduction
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Creating genetic diversity
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Creating genetic diversity
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../genetic_diversity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Finding That Molecule in a Haystack
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../epPCR/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Error-prone PCR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gene_shuttling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Recombinatorial gene and domain shuffling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Laboratory selection methods
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Laboratory selection methods
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab_selection_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Laboratory selection methods
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Selection of binders
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Selection of binders
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../binders/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Selection for binders in vitro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phage_display/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Phage display
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cell surface display
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ribodisplay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ribosome display
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mRNAdisplay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    cDNA display & mRNA display
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cisdisplay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CIS display
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../selex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SELEX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_3" id="__nav_2_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Selection of enzymes and reporters
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Selection of enzymes and reporters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enzymes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Selection of enzymes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../survival.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    By survival
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biochem.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    By biochemical assays
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSR_SBL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    By in vitro compartmentalisation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Continuous directed evolution methods
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Continuous directed evolution methods
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cont_de_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Continuous directed evolution methods
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PACE_PANCE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PACE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../insitu_mut.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    In situ targeted mutagenesis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Computational tools
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Computational tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../computational_tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Computational tools (for library creation, design and analysis)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Genome Evolution
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Genome Evolution
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../genome_evolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Genome Evolution
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mage.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MAGE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ALE.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Adaptive Laboratory Evolution
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scramble.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scramble
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Team Wiki
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Team Wiki
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team_wiki/wiki_list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    List of team wikis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team_wiki/setup_wiki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting up your team wiki
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team_wiki/access_repo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Accessing your team wiki repository
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team_wiki/gh_pages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuring your GitHub Pages
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Default wiki tutorial
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Default wiki tutorial
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team_wiki/mkdocs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MkDocs & Material for MkDocs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team_wiki/fork/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fork a repository
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team_wiki/envr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Environment for editing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team_wiki/operations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MkDocs common operations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team_wiki/push/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Stage, commit and push changes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team_wiki/pull_request/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Submit a pull request
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team_wiki/forward/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Moving forward
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="introduction">Introduction</h1>
+<p>Two of the most common methods for high-throughput screening in directed evolution are the fluorescence-activated cell sorting (FACS) and, its more recent variation, the fluorescence-activated droplet sorting (FADS). While FACS cytometers can analyze and sort both cells and droplets (with or without cells), they cannot generate the latter. FADS cytometers, on the other hand, can generate droplets that will encapsulate cell-free mixtures or cells for subsequent analysis and sorting. Despite their differences, both systems are used for high-throughput screening of particles and we will mostly focus on FACS applications as they are more common/accessible among laboratories. FACS cytometers are complex instruments that can analyze the fluorescent characteristics of individual “particles” (e.g., cells, liposomes, beads, emulsion droplets, or polymer shells) at extremely high event rates (~10^7 per hour), isolating those with the desired signal for the <a href="https://doi.org/10.1016/j.tibtech.2019.11.002">desired trait</a></p>
+<h1 id="challenges">Challenges</h1>
+<p>The main bottleneck in the usage of these systems is that they require the linkage of a genotype (a nucleic acid sequence) to a phenotype (a functional feature like binding or catalytic activity) in an ultrahigh-throughput context (Griffiths and Tawfik, 2006). In other words, the activity of an evolved molecule must be somehow linked to an output that is detectable by the FACS machine (usually a fluorescence signal). Once detected, the particle is sorted and its content can then be sequenced for establishing the genotype-phenotype relationship. Creating experimental setups for these types of studies can be very difficult depending on the system one is working with. If you work with the directed evolution of fluorescent proteins, the signal is directly provided by your protein, however, if you work with metabolic enzymes, for example, you might have to use indirect methods, such as fluorogenic substrates (if available), transcription factors that detect the product of your reaction, being induced by it, and activate the expression of a fluorescent protein, etc. Thus, for screenings involving indirect relationships, things can get a way more complicated. We will see below many examples addressing these challenges and, hopefully, they will serve as inspiration for your project!</p>
+<p>Firstly, we will briefly explore different FACS-based screening tech­niques in directed evolution. They can be divided into six distinct categories according to the methods used to link the genotype and phenotype:
+- cell surface display (or in vivo display) of enzymes,
+- fluorescent protein-based methods,
+- entrapment of the product inside the cells,
+- in vitro compartmentalization,
+- single-cell/microcolony compartmentalization</p>
+<h2 id="cell-surface-display">Cell surface display</h2>
+<p>This technique is based on the attachment of heterologous enzymes to the surface of microorganisms (the most common are: bacterial surface display (van Bloois et al., 2011)), yeast (yeast surface display (Boder and Wittrup, 1997)) or phages (phage surface display (Fernandez-Gacio et al., 2003)). Cell display offers ultra­high-throughput capacity of up to 10^9 clones per round and allows direct contact between the enzyme and the added substrate, without requiring dif­fusion through the cell membrane. However, this accessibility is at the same time a major drawback as the product is also freely diffusible. This drawback has been overcome by the development of cell microencapsulation techniques that imitate natural cell compartmentalization e.g., including the target enzyme in microemulsion droplets along with the substrate and products (Griffiths and Tawfik, 2006). The main advantages of the cell-in-droplet approach are its high-throughput capacity (~10^9 clones per round) and the reduced volume of the microemulsions (typically ~5 femtoliters), such that little substrate is needed (Aharoni et al., 2005). Very recently, novel screening platforms using polymer encapsulated cells have been developed like: (1) the cellular high-throughput encapsulation, solubilization and screening (CHESS) method to allow the encapsulation of libraries of approximately 10^8 mutants in a polymer to form cell-like microcapsules (Yong and Scott, 2015), (2) the polymer shell method that relies on fluorescent hydrogel formation around E. coli cells (Pitzler et al., 2014) or yeast cells (Vanella et al,. 2019). </p>
+<h2 id="in-vitro-display">In vitro display</h2>
+<p>This method is based on the synthesis of the target protein through an in vitro translation system so that the genotype-phenotype linkage is achieved using molecules like ribosomes (ribosome display), puromycin (mRNA display), and the DNA replication initiator pro­tein RepA (CIS display). More recently, novel in vitro display approaches have been reported that include liposome and megavalent bead display. Liposome display enables membrane proteins to be engineered, and it relies on their display on liposome membranes through the transcription and trans­lation of a single DNA molecule using an encapsulated cell-free transla­tion system (Fujii et al., 2014). Megavalent bead surface display allows tailor-made protein binders by laboratory evolution. In this method, the gene that encodes the protein of interest is attached to a bead by strong noncova­lent interactions and the corresponding protein is displayed via a covalent thioether bond on the DNA (Diamante et al., 2013).</p>
+<h2 id="fluorescent-protein-based-methods">Fluorescent protein-based methods</h2>
+<p>Due to their fluorescent properties, GFP and other fluorescent proteins (FPs) variants are ideal candidates for single-cell fluores­cence analysis (you can find more about them in this amazingly resourceful website: https://www.fpbase.org/) and, therefore, they can be used in flow cytometry screening (Yang and Withers, 2009). The main advantages of GFP-based screening methods are their very high-throughput (∼10<sup>7–10</sup>8 clones per round) and the lack of expensive fluorescent substrates. On the other hand, the biggest challenge in this approach is to link the enzymatic func­tion or activity of interest to the FPs expression, which can be very difficult depending on the studied protein.
+While the results achieved using this flow cytometry-based screen are promising, we must emphasize that flow cytometry is unlikely to serve as a standalone method. It is well-known that individual cells from bacterial cultures composed of a single genotype may display a range of phenotypes attributable to the stochastic nature of gene expression. As one considers that the selection criteria in flow cytometry experiments are determined by the phenotype of an individual cell, the inherent population heterogeneity of a bacterial culture, especially one containing a library of genotypes, makes the task of counter-selecting for one phenotype against another extremely challenging. For example, isolating a single bacterium displaying a low level of fluorescence does not guarantee that a culture grown from that single bacterium will possess, as a whole, those same fluorescence characteristics. With this in mind, the need for reinforcing a single-cell enrichment strategy with traditional assays, measuring average expression levels for an entire population, should be clear.
+As FP-based methods are becoming more and more common, a few examples for the directed evolution of different molecules can be found below:
+- Transcription factor directed evolution (usually targeted to ligand and/or DNA binding domains) 
+Tang and colleagues evolved a XylR regulator towards improved operating range, producing a more linear response of the system to the xylose inducer. In other words,  a system which was originally considered a bistable molecular switch (digital) was evolved into an analogic one. In this example, the link between genotype and protein function was established by a transcriptional interaction: XylR directly regulated the expression of a GFP gene and mutations affecting the function of the regulator could be readily tracked by the analysis and selection of cells with fluorescence levels that were different from the original system.  https://pubs.acs.org/doi/10.1021/acssynbio.0c00225
+In a different approach, Machado and colleagues evolved a repressor called PcaV to act as a biosensor for hydroxyl-substituted benzoic acids (such as vanillin and other closely related aromatic aldehydes). The overall system was similar to the one discussed above, linking protein function to fluorescent output through a transcriptional system directly repressed by PcaV which was alleviated by the usage of inducing molecules. After the generation of PcaV mutants, cells were screened through multiple rounds of counter-selection using FACS. In the first round, libraries were uninduced and selected for low fluorescence levels in order to remove non-functional repressors (cells expressing GFP without the inducer probably had non-functional repressors). On the second round, the previously sorted libraries were induced with the new molecule e.g. vanillin (that did not induce the original PcaV) and selected for GFP expression (functional mutants responding to vanillin). On the third round, the uninduced library was selected for cells with low fluorescence levels (this time with a less stringent cutoff than the first round). Finally, cells were again induced with the new molecule and selected for the most fluorescent cells. With this approach, a new biosensor capable of detecting vanillin and other related molecules was generated.   https://jbioleng.biomedcentral.com/articles/10.1186/s13036-019-0214-z
+In our last example, a good combination of dry and wetlab was employed. The IPTG responsive Transcription Factor LacI has been computationally redesigned and mutated to recognize four new non-native inducers (Taylor et al., 2016). This study is a good example of how the combination of computation-guided mutagenesis based on the Rosetta algorithm and different diversification techniques (such as epPCR and saturation mutagenesis) can accelerate the discovery/generation of new molecular functions. In a counter-selection round, the mutant libraries were pre-screened for retained ability to repress a TolC reporter (a porin that allows entry of toxic colicin E1) by growth enrichment in the absence of inducers but in the presence of colicin E1. The enriched LacI libraries were then positively screened by FACS for their ability to activate production of GFP upon induction with different sugars, resulting in variants of LacI that were responsive to fucose, gentiobiose, lactitol and sucralose (Taylor et al., 2016). In this instance, no active counter-screening was performed against activation by IPTG, so nearly all mutants retained their ability to respond to IPTG, a phenotype that was reduced for some designs upon shuffling of mutations for activity screening. https://academic.oup.com/nar/article/48/1/e3/5645005?login=true
+ - Evolution of promoters/cis-regulatory regions
+For the study and directed evolution of promoter and cis-regulatory regions, a recent and extremely powerful strategy is the Sort-Seq. It relies on the power of FACS for sorting individual cells from libraries of regulatory sequences (controlling the expression of a FP) into different bins, according to their fluorescence levels. Later, each bin is sequenced through and the pool of regulatory sequences in each bin is analysed for the understanding, prediction and re-engineering of sequence-function (promoter-expression) relationships,
+https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-016-2533-5
+https://www.annualreviews.org/doi/full/10.1146/annurev-genom-083118-014845
+Although not exactly a directed evolution project, the work from de Boer and colleagues (de Boer et al., 2019) provides an insightful resource for the generation and study of promoter libraries in yeast. Through the usage of random mutagenesis, a library of 100,000,000 promoters was cloned upstream of a Yellow Fluorescent Protein (YFP) gene and screened through FACS for different promoter activities (cells were binned according to their YFP expression levels). Each bin was then sequenced and a machine learning interpretable model was built with this data, allowing accurate prediction of the library and of independent test promoters that were designed de novo following the model rules.
+https://www.nature.com/articles/s41587-019-0315-8
+In a similar approach using E. coli cells, Urtecho and colleagues (Urtecho et al., 2019) explored the combinatorial space of sigma70 promoter elements in E. coli a combinatorial library of promoter elements was generated, cloned upstream a GFP reporter gene, sorted into bins by FACS and sequenced (both DNA and RNA-seq) for establishing the genotype (promoter sequence)-phenotype(GFP expression bins) relationships. One could use this strategy to evolve not only constitutive promoters but also inducible promoters (see see Rohlihil et al., 2017 for the Engineering a Formaldehyde-Inducible Promoter  and Yu et al., 2021 for the engineering of LacI based systems) towards different expression dynamics. 
+https://pubs.acs.org/doi/10.1021/acs.biochem.7b01069
+https://www.nature.com/articles/s41467-020-20094-3
+https://pubs.acs.org/doi/10.1021/acssynbio.7b00114</p>
+<ul>
+<li>
+<p>Directed evolution of enzymes by linking the product to a biosensor
+Although linking enzyme mutant libraries to FPs for FACS-based directed evolution is not a straightforward task, many groups have achieved it through the adoption of in vivo Biosensors. These biosensors can be any molecular sensor (usually protein or RNA-based one) that will interact with the product of a specific reaction and modulate the expression of a FP according to the product concentration. The biggest challenge is to find/engingineer sensors that can detect specific metabolites (in the native cellular concentrations) and also possess a good dynamic range for reliably connecting the input (product concentration) to the output (FP production). A comprehensive review in this topic has been written by Lin and colleagues and will probably give you some inspiring ideas if you decide to work on this topic.
+https://www.sciencedirect.com/science/article/abs/pii/S0734975017300812
+As an example of using a transcription factor to link the activity of an enzyme to the expression of a FP, let's consider the work of Kwon and collaborators (Kwon et al., 2018). In this study, the main goal was to change the substrate scope of a tryptophan-indole lyase from tryptophan-indole to  tyrosine-phenol. The expression of the FP in E. coli cells was controlled by a phenol-inducible transcription factor (DmpR). Using this genetic circuit-based biosensor for detection of phenolic components, the substrate scope of a tryptophan-indole lyase was re-engineered by directed evolution towards the desired tyrosine-phenol-lyase with complete loss of the original activity. https://www.nature.com/articles/s41598-018-20943-8
+RNA sensors have also been used to screen enzymes from directed evolution with improved activities. For example, Michener and Smolke (Michener and Smolke, 2012) have targeted yCDM1, an enzyme that is not very efficient in demethylating caffeine to theophylline. A RNA riboswitch was used as a theophylline biosensor. The RNA switch was placed in the 3′ UTR region of a fluorescent reporter gene. If no theophylline  was available, the poly-A tail of the mRNA was removed, leading to rapid degradation and low gene expression. Addition of the small molecule ligand favored a conformation in which the mRNA was stable and translation could proceed. Thus, the enzyme was mutagenized through EP-PCR and the RNA-based biosensor was used for screening with FACS. A mutant version of yCDM1 was obtained showing 33-fold increase in enzyme activity and 22-fold increase in selectivity. (Michener and Smolke, 2012).
+https://www.sciencedirect.com/science/article/abs/pii/S109671761200047X?via%3Dihub</p>
+</li>
+<li>
+<p>Directed evolution of RNA/DNA aptamers/switches
+If a biosensor for your system is not available, why not try to develop one through directed evolution? This strategy, although very laborious, has been adopted by many groups with a special focus on RNA-based sensors. The first class of RNA-based sensors we will see are Riboswitches. They are biosensors typically composed of an aptamer domain, which recognizes a specific ligand, and an expression platform that couples ligand binding to a change in the FP expression. A traditional example of riboswitch directed evolution was demonstrated by Sean and Gallivan (Sean &amp; Gallivan, 2009).  Libraries (theophylline aptamer, followed by a sequence of eight randomized bases, the RBS, and the red-fluorescent reporter gene DsRed) were generated through random primers and cloned into plasmids for in vivo expression in E. coli. The system was coupled to a FP in a way that FP expression was increased in the presence of theophylline through the exposure of the RBS region, which was previously “masked” by the mRNA secondary structure. A more recent study by Page and colleagues (Page et al., 2018) using the same system has also generated novel theophylline riboswitches by coupling a dual genetic selection and FACS.  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2615613/ 
+https://pubs.acs.org/doi/10.1021/acssynbio.8b00099
+The second class of RNA-based sensors are toehold switches, A toehold switch is an RNA fragment with a secondary hairpin structure that is used to regulate translation. The toehold sequence contains a strong ribosome binding site (RBS) and a start codon that is followed by the coding sequence of a reporter gene. In the absence of a complementary sequence, the toehold is in its native hairpin conformation acting as a translational repressor and preventing ribosomes from binding to the RBS and thus from translating the reporter gene downstream. In the presence of a single stranded trigger complementary to the stem of the hairpin, the switch unfolds and exposes the ribosome binding site and the start codon and translation can be initiated. In a very comprehensive study, Green and colleagues (Green et al., 2014) have designed and characterized libraries of Toehold Switches, ending up with 26 sensors that could be used together with very little crosstalk and high dynamic range for the detection of endogenous mRNA in E. coli and the building of genetic circuits. The researchers used the NUPACK nucleic acid sequence design package (Zadeh et al., 2011) to generate libraries of de-novo-designed translational activators satisfying their desired parameters followed by synthesis of the oligos, cloning and in vivo testing of the libraries through FACS. In a more recent study,Angenent-Mari and colleagues ( Angenent-Mari et al., 2020) have taken one step further, using Deep Neural Networks (DNNs) to predict toehold switch function as a canonical riboswitch model in synthetic biology. To facilitate DNN training, they synthesized and characterized in vivo a dataset of 91,534 toehold switches spanning 23 viral genomes and 906 human transcription factors. DNNs trained on nucleotide sequences outperformed previous state-of-the-art thermodynamic and kinetic models.
+https://www.sciencedirect.com/science/article/pii/S0092867414012896
+https://www.nature.com/articles/s41467-020-18677-1</p>
+</li>
+</ul>
+<h2 id="entrapment-of-the-substrateproduct-inside-the-cells">Entrapment of the substrate/product inside the cells</h2>
+<p>An alternative to cell surface dis­play strategies and FP-based screening methods are approaches in which the fluorescent product is trapped within the cell (Yang and Withers, 2009). This strategy faces two main challenges: (i) the obtention of commercial fluorogenic substrates for that specific reaction and (ii) the retention of such molecules inside of the cell. In this context, before starting a project based on this approach, one has to check for the availability of commercial fluorogenic substrates that cannot diffuse to the extracellular environment. The entrapment is usually achieved when the size, polarity, or other chemical proper­ties of the substrate are modified, resulting in the retention of the product within the cell. 
+As a successful example, Tan and colleagues (Tan et al., 2019) have improved the fucosylation catalytic efficiency of an α1,3-FucT fucosidase by 14-fold after three rounds of directed evolution in E. coli. Two kinds of fluorescently labeled acceptor substrates (LacNAc derivatives) were designed and synthesized for cell entrapment. They were transported into the cell via the LacY transporter. The fucosylation reaction resulted in a trisaccharide product that accumulated inside of the cell as the LacY transport rate for such products was very low. Thus, fluorescence intensities of cells carried the information about the fucosylation efficiency allowing FACS-based screenings.
+Another possibility is to work with fluorogenic probes inside the cell that detect the substrate/product of the reaction. Sadler and colleagues (Sadler et al., 2018) have engineered a monoamine oxidase with improved activity towards a novel secondary amine substrate amine substrates based on the intracellular oxidation of a fluorogenic substrate by intracellular bacterial peroxidases. The authors expressed the amine oxidase variant library in E. coli and stained cells with a fluorogenic probe which is sensitive to oxidation by H2O2 (a byproduct of the monoamine oxidase reaction).  The probe was introduced into cells with the help of freeze-thaw cycles and chemicals that increased membrane permeability. 
+Finally, the drawback of substrate/product entrapment in the cell can also be overcome by the adoption of cell microencapsulation techniques that imitate natural cell compartmentalization as previously discussed in the Cell surface display section. As an example, a microdroplet-enabled FACS based screening strategy was also developed for improving cellulase activity. In this study, Ostafe et al. used double emulsions to encapsulate yeast cells expressing cellulase in microfluidic droplets (Ostafe et al., 2013). Glucose that was released by cellulose activity on carboxymethylcellulose substrate was detected via a hexose oxidase based coupled enzyme assay and enrichment of a positive population was demonstrated based on droplet fluorescence.
+https://advances.sciencemag.org/content/5/10/eaaw8451
+https://pubs.rsc.org/en/content/articlelanding/2018/AN/C8AN00851E#!divAbstract</p>
+<h2 id="in-vitro-compartmentalization-ivc">In vitro compartmentalization (IVC)</h2>
+<p>Microencapsulation can be performed in the absence of cells, directly producing the enzyme from the DNA library by in vitro protein translation. Such IVC offers the advantage of generating a large number of droplets per emulsion volume unit (&gt;1010 in 1 mL of emul­sion), coupled to the ease of preparing emulsions and their high stability to changes in temperature, pH, and salt concentrations (Aharoni et al., 2005). Additionally, IVC prevents the gene diversity loss derived from the cloning and transformation steps by in vitro protein translation of the DNA used to generate the mutant library; moreover, it reduces experimental time by skipping the cell growth steps associated with cloning, transformation, and protein production (Martínez and Schwaneberg, 2013).</p>
+<h2 id="single-cell-encapsulation">Single-cell encapsulation</h2>
+<p>https://pubs.acs.org/doi/pdf/10.1021/acssynbio.9b00103
+Cells are the most straightforward way of protein production, yet they often lack the ability to take up the desired screening substrate or to retain the nascent product. They can be co-encapsulated with all compounds required for the screening reaction (substrates, cell lysis agents, buffer etc.) in an emulsion droplet and the enzyme of interest can be released from the cell in situ. This is an elegant approach, as it combines the advantages of cells and emulsion compartments: that is, the cells produce the enzyme; the emulsion retains the genotype– phenotype connection. Although high-throughput sorting rates are feasible with emulsions in a conventional flow cytometer or in custom-made chip devices, the restriction of compartmentalizing a maximum of one cell per emulsion droplet by Poisson’s distribution causes most of the droplets to be empty. Therefore, the effective throughput is reduced. Nevertheless, from a sustainability point of view, microcompartments are superior to conventional assays, since only pico- or even femtoliters of reagents are used per sample as previously discussed by Agresti et al. Moreover, the compartmentalization of a single cell in such a small reaction volume typically results in high local enzyme concentrations during screening, which benefits the signal-to noise ratio.
+As previously discussed in the Fluorescent protein-based methods section, the stochastic nature of gene expression - phenotypic cell-to-cell variability - (Elowitz, 2002) can make FACS screenings misleading in some cases (Schaerli and Isalan, 2013). Imagine that due to noise, a single genotype (promoter sequence or synthetic circuit) can produce different fluorescence levels within the population. In this case, many cells will be sorted into different bins although having the same genotype. One way to tackle this problem is to use statistical methods after the sequencing step to find in which bin a single genotype is enriched (although it might be present in other bins). A second approach would be to select genotypes with high stochasticity, re-clone them and analyse the populational behaviour in both flow cytometry and plate reader. Lastly, an alternative method that has been gaining attention in recent years, is based on the gel encapsulation of microcolonies. With this technology, it is possible to use the high-throughput power of FACS for screening cell populations and circumventing the problem of high cell-to-cell variability (Weaver et al., 1991; Sahar et al., 1994; Zengler et al., 2002; Fischlechner et al., 2014; Meyer et al., 2015; Duarte et al., 2017).</p>
+<h1 id="protocol-and-application">Protocol and application:</h1>
+<p>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6047729/pdf/emss-78570.pdf
+https://sci-hub.se/https://pubs.acs.org/doi/pdf/10.1021/acssynbio.7b00111</p>
+<h1 id="review">Review:</h1>
+<p>https://www.mdpi.com/2072-666X/10/11/734/htm</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2021 iDEC. CC-BY-4.0 | The International Directed Evolution Competition (iDEC) is a Scottish Charitable Incorporate Organisation (SCIO), registered in Scotland, with charity number：SC050826
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
+      
+        <script src="../../javascripts/tables.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

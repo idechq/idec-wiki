@@ -1,0 +1,2108 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../envr/">
+      
+      
+        <link rel="next" href="../push/">
+      
+      
+      <link rel="icon" href="../../img/idec-logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+    
+    
+      
+        <title>MkDocs common operations - iDEC Resources Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#common-operations-in-mkdocs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="iDEC Resources Wiki" class="md-header__button md-logo" aria-label="iDEC Resources Wiki" data-md-component="logo">
+      
+  <img src="../../img/idec-logo-white-bg.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            iDEC Resources Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MkDocs common operations
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/idechq/idec-wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../resources/introduction/" class="md-tabs__link">
+          
+  
+  
+  Resources
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../wiki_list/" class="md-tabs__link">
+          
+  
+  
+  Team Wiki
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="iDEC Resources Wiki" class="md-nav__button md-logo" aria-label="iDEC Resources Wiki" data-md-component="logo">
+      
+  <img src="../../img/idec-logo-white-bg.png" alt="logo">
+
+    </a>
+    iDEC Resources Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/idechq/idec-wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Resources
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Introduction
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Creating genetic diversity
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Creating genetic diversity
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/genetic_diversity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Finding That Molecule in a Haystack
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/epPCR/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Error-prone PCR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/gene_shuttling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Recombinatorial gene and domain shuffling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Laboratory selection methods
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Laboratory selection methods
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/lab_selection_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Laboratory selection methods
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Selection of binders
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Selection of binders
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/binders/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Selection for binders in vitro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/phage_display/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Phage display
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/FACS_FADS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cell surface display
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/ribodisplay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ribosome display
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/mRNAdisplay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    cDNA display & mRNA display
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/cisdisplay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CIS display
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/selex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SELEX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_3" id="__nav_2_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Selection of enzymes and reporters
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Selection of enzymes and reporters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/enzymes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Selection of enzymes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/survival.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    By survival
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/biochem.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    By biochemical assays
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/CSR_SBL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    By in vitro compartmentalisation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Continuous directed evolution methods
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Continuous directed evolution methods
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/cont_de_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Continuous directed evolution methods
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/PACE_PANCE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PACE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/insitu_mut.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    In situ targeted mutagenesis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Computational tools
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Computational tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/computational_tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Computational tools (for library creation, design and analysis)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Genome Evolution
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Genome Evolution
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/genome_evolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Genome Evolution
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/mage.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MAGE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/ALE.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Adaptive Laboratory Evolution
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/scramble.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scramble
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Team Wiki
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Team Wiki
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wiki_list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    List of team wikis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup_wiki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting up your team wiki
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../access_repo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Accessing your team wiki repository
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gh_pages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuring your GitHub Pages
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Default wiki tutorial
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Default wiki tutorial
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mkdocs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MkDocs & Material for MkDocs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fork/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fork a repository
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../envr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Environment for editing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    MkDocs common operations
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    MkDocs common operations
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configure-the-wiki-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure the wiki name
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#put-pages-on-the-navigation-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Put pages on the navigation menu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-subsections-in-the-navigation-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create subsections in the navigation menu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-an-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add an image
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-links-to-downloadable-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate links to downloadable contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#embed-a-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embed a video
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../push/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Stage, commit and push changes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pull_request/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Submit a pull request
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../forward/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Moving forward
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configure-the-wiki-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure the wiki name
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#put-pages-on-the-navigation-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Put pages on the navigation menu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-subsections-in-the-navigation-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create subsections in the navigation menu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-an-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add an image
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-links-to-downloadable-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate links to downloadable contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#embed-a-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embed a video
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="common-operations-in-mkdocs">Common operations in MkDocs</h1>
+<p>In this section, please make sure you have the live server up and running.<br />
+You can refer to the previous page [Set up a Docker container for wiki editing] for the instructions.</p>
+<p>This page covers the essential information you need to know to build your team wiki.</p>
+<h2 id="configure-the-wiki-name">Configure the wiki name</h2>
+<p>The default wiki name we give our template repository is "iDEC HQ Team Wiki Example".<br />
+<img alt="Default sitename" src="../img/tutorial_sitename_default.png" width="400px" /><br />
+To change it to a new name, use a plain text editor to open the file:
+<code>mkdocs.yml</code><br />
+Look for the following configuration:
+<div class="highlight"><pre><span></span><code>site_name: iDEC HQ Team Wiki Example
+</code></pre></div>
+and change it to:
+<div class="highlight"><pre><span></span><code>site_name: iDEC 2021 Mock Team Wiki
+</code></pre></div>
+Refresh the live server, notice that 3 things should have changed:  </p>
+<ul>
+<li>browser tab title  </li>
+<li>wiki header title  </li>
+<li>wiki navigation bar header  </li>
+</ul>
+<p><img alt="New sitename" src="../img/tutorial_sitename_new.png" width="400px" />  </p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>It is possible to change the favicon and icon of the wiki in <code>mkdocs.yml</code>.  </p>
+<p>However, if your team decide to use MkDocs for Material, or other static site generators with templates, we politely request that your use the iDEC favicon and logo, and keep our copyright statement. This is to show that your team wiki is part of iDEC. Thank you.</p>
+</div>
+<h2 id="put-pages-on-the-navigation-menu">Put pages on the navigation menu</h2>
+<p>If you click on the "Protocol" or the "Notebook" link in the navigation menu, you will land on to a <code>404 - Not found</code> page.<br />
+<img alt="Navigation Menu Error" src="../img/tutorial_nav_error.png" width="600px" /><br />
+We will fix this now. Using an IDE or a text editor, open the <code>mkdocs.yml</code> file.<br />
+Look for the following configuration:</p>
+<div class="highlight"><pre><span></span><code>nav:
+  - Home: index.md
+  - Background: background.md
+  - Results: results.md
+  - Protocols: protocols.md
+  - Lab notebook: notebook.md
+  - Some useful features: useful_features.md
+</code></pre></div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Failure to follow the proper use of whitespaces in each list item will result in links not being properly rendered.</p>
+</div>
+<p>Comparing this section with the navigation menu, you can see that, for each indented list item, the key (text before colon <code>:</code>) is the link label, and the value (text after colon) corresponds to the file path, which is <strong>relative to</strong>  the <code>docs/</code> folder.</p>
+<p>The files for "Protocols" and "Notebook" actually exist - they are just sitting in the directory <code>docs/documentation/</code>.</p>
+<p><div class="highlight"><pre><span></span><code>.
+└─docs
+   └─documentation
+      ├─notebook.md 
+      └─protocols.md
+</code></pre></div>
+So the solution is to fix the <code>mkdocs.yml</code> file, <code>nav</code> section as follow:</p>
+<div class="highlight"><pre><span></span><code>nav:
+  - Home: index.md
+  - Background: background.md
+  - Results: results.md
+  - Protocols: documentation/protocols.md
+  - Lab notebook: documentation/notebook.md
+  - Some useful features: useful_features.md
+</code></pre></div>
+<p>Return to the browser and the links should now be functional.
+<img alt="Navigation Menu Error" src="../img/tutorial_nav_fixed.png" width="600px" />  </p>
+<h2 id="create-subsections-in-the-navigation-menu">Create subsections in the navigation menu</h2>
+<p>If you have a lot of pages, you might want to group them together.<br />
+In the <code>nav</code> section inside the <code>mkdocs.yml</code> file, make the following change:</p>
+<div class="highlight"><pre><span></span><code>nav:
+  - Home: index.md
+  - Project:
+      - Background: background.md
+      - Results: results.md
+      - Documentation:
+          - Protocols: documentation/protocols.md
+          - Lab notebook: documentation/notebook.md
+  - Some useful features: useful_features.md
+</code></pre></div>
+<p>Return to the browser. The menu should now have 3 levels, and can collapsed or expanded at different levels.</p>
+<p><img alt="Navigation Menu Levels" src="../img/tutorial_nav_levels.png" width="600px" />  </p>
+<p>Two important things to note in <code>mkdocs.yml</code>:  </p>
+<ol>
+<li>The subsection must have a header but <strong>without a file path</strong><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+<li>Under the subsection, the list item is indented to the right by <strong>exactly 4 whitespaces</strong></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Structuring your Markdown file locations and the navigation menu in the same way is highly recommended, since it will help your collaborators / teammates to find the location of the file much more easily.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The structure here is only for the illustration of increasing page depth. In general, we recommend that teams limit their wiki page depth to only 2 levels.<br />
+You will also notice that for your assigned team repository, your 2<sup>nd</sup> level pages are grouped under section headers instead. That is because we enabled the feature <a href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-sections">Navigation Sections</a> in <code>mkdocs.yml</code>, which is more user-friendly when the total number of pages is small.</p>
+</div>
+<h2 id="add-an-image">Add an image</h2>
+<p>You will now add an image to the wiki, similar to how you would add figures for illustrations and results.
+Save a <a href="https://via.placeholder.com/600x400">dummy image</a> under the directory <code>docs/img</code> and name it as <code>dummy.png</code><br />
+Then, edit <code>docs/results.md</code>, and add the following code underneath the existing texts:</p>
+<div class="highlight"><pre><span></span><code>![dummy image](img/dummy.png){ width=800px }
+</code></pre></div>
+<p>Return to the browser. You should now see the image being shown on the "Results" page.</p>
+<p><img alt="Add figure" src="../img/tutorial_figure.png" width="600px" />  </p>
+<p>While the size of the figure was 600 pixels x 400 pixels, on the page it is stretched to 800 pixels in width. You can modify the image size by the attributes tag<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> after the normal Markdown syntax for image insertion.</p>
+<div class="admonition note">
+<p class="admonition-title">Self-practice</p>
+<p>Why not try creating a page called "Our Team", list your iDEC teammates and add their photos?</p>
+</div>
+<h2 id="generate-links-to-downloadable-contents">Generate links to downloadable contents</h2>
+<p>In some cases you might have some information that are simply too long to be part of a webpage. Instead of displaying its full content, you might want to generate a link to the downloadable file instead. This can be done by placing the file somewhere under the <code>docs</code> folder and then pointing a hyperlink to it.  </p>
+<p>Inspect the directory <code>docs</code> and you will see:</p>
+<div class="highlight"><pre><span></span><code>.
+└──docs
+   ├─documentation
+   │  ├─notebook.md 
+   │  └─protocols.md
+   └─notebooks
+      ├─MCLONE001.pdf 
+      └─EVOLVE001.pdf
+</code></pre></div>
+<p>Assuming these are exported electronic notebook files, you will now create links to them on the page<br />
+"Project -&gt; Documentation -&gt; Notebook", or,<br />
+<code>http://localhost:8000/documentation/notebook/</code>  </p>
+<p>Use a text editor and open <code>docs/notebook.md</code>, then insert the following lines underneath the existing content:<br />
+<div class="highlight"><pre><span></span><code>- [MCLONE001: Plasmid construction for DE of GFP](../notebooks/MCLONE001.pdf){: target=&quot;_blank&quot; }
+- [EVOLVE001: Directed evolution on GFP](../notebooks/EVOLVE001.pdf){: target=&quot;_blank&quot; }
+</code></pre></div></p>
+<p>So for the relative path <code>../notebooks/MCLONE001.pdf</code>, it works as follow:
+1. Starts from <code>docs/documentation</code> where <code>notebook.md</code> is located
+2. <code>../</code> = goes up 1 level to <code>docs</code>
+3. <code>notebooks/MCLONE001.pdf</code> = goes into the <code>notebooks</code> folder and locate the <code>MCLONE001.pdf</code> file.</p>
+<p>This relative path will work both on your location machine as well as the deployed GitHub Pages.</p>
+<p>Return to the browser and go to "Notebook" page, you will now find two links.
+Click on any of them and you should see a new tab with the PDF file showing up.</p>
+<p><img alt="Link files" src="../img/tutorial_links.png" width="800px" />  </p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Upload your files in formats that are OS-agnostic and not dependent on proprietary software. For example, use PDF instead of Word documents or Powerpoint files.</p>
+</div>
+<h2 id="embed-a-video">Embed a video</h2>
+<p>Use of multimedia faciliates scientific communication to the lay public. To embed a video, use of HTML is necessary.</p>
+<p>You already have a cover image in the repository.<br />
+Download a sample video from this <a href="https://drive.google.com/file/d/1boSkC91DsA2Ueh7IDEcudd-yfaeNPPyQ/view?usp=sharing">link</a>.<br />
+Then save the file as <code>iDEC_video.mp4</code> under the <code>docs/assets</code> directory:</p>
+<div class="highlight"><pre><span></span><code>.
+└──docs
+   ├─assets
+   │  └─iDEC_video.mp4 
+   └─img
+      └─video_cover.png
+</code></pre></div>
+<p>To embed this on the "Home" page, open a text editor, insert the following code into the end of the file <code>docs/index.md</code> and save the file.</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">video</span> <span class="na">controls</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;600px&quot;</span> <span class="na">poster</span><span class="o">=</span><span class="s">&quot;img/video_cover.png&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">source</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;assets/iDEC_video.mp4&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;video/mp4&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">video</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>In the code above, the <code>poster</code> attribute in the <code>&lt;video&gt;</code> element has a relative path pointing to the cover image of the video.<br />
+The <code>src</code> attribute (which is a shorthand for "source") in the <code>&lt;source&gt;</code> element has a relative path pointing to the video itself.</p>
+<p>Return to the browser and go to Home (<code>localhost:8000</code>), you will see the video being embedded.  </p>
+<p><img alt="Add video" src="../img/tutorial_video.png" width="600px" />  </p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Make sure each individual file (whether document or video) does not exceed 100 MB in size, which is the limit for hosting by GitHub. Also, you should keep the size of your repository within 1 GB.</p>
+</div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Check out the Material for MkDocs <a href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#fn:2">reference</a> on how to enable section index pages.
+This is however not recommended from a UX design perspective.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Material for MkDocs <a href="https://squidfunk.github.io/mkdocs-material/reference/images/">reference on images</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2021 iDEC. CC-BY-4.0 | The International Directed Evolution Competition (iDEC) is a Scottish Charitable Incorporate Organisation (SCIO), registered in Scotland, with charity number：SC050826
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
+      
+        <script src="../../javascripts/tables.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
