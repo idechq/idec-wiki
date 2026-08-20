@@ -1,5 +1,21 @@
 # List of iDEC team wikis
 
+## iDEC 2026
+| Team                             | Assigned Repository Name                                                                                         | Wiki Site                                                                                                                        |
+|:---------------------------------|:-----------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------|
+| Cambridge                        | [2026_Cambridge](https://github.com/idec-teams/2026_Cambridge)                                        | [idec-teams.github.io/2026_Cambridge](https://idec-teams.github.io/2026_Cambridge)                                 |
+| McMasterU                        | [2026_McMasterU](https://github.com/idec-teams/2026_McMasterU)                                             | [idec-teams.github.io/2026_McMasterU](https://idec-teams.github.io/2026_McMasterU)                                             |
+| OUC-DE                           | [2026_OUC-DE](https://github.com/idec-teams/2026_OUC-DE)                                                | [idec-teams.github.io/2026_OUC-DE](https://idec-teams.github.io/2026_OUC-DE)                                                |
+| SynthImmunol                     | [2026_SynthImmunol](https://github.com/idec-teams/2026_SynthImmunol)                                          | [idec-teams.github.io/2026_SynthImmunol](https://idec-teams.github.io/2026_SynthImmunol)                                       |
+| NEFU-China                       | [2026_NEFU-China](https://github.com/idec-teams/2026_NEFU-China)                                            | [idec-teams.github.io/2026_NEFU-China](https://idec-teams.github.io/2026_NEFU-China)                                            |
+| LZU-CHINA                        | [2026_LZU-CHINA](https://github.com/idec-teams/2026_LZU-CHINA)                                             | [idec-teams.github.io/2026_LZU-CHINA](https://idec-teams.github.io/2026_LZU-CHINA)                                             |
+| LZU GANSU                        | [2026_LZU GANSU](https://github.com/idec-teams/2026_LZU_GANSU)                                             | [idec-teams.github.io/2026_LZU GANSU](https://idec-teams.github.io/2026_LZU_GANSU)                                                  |
+| PIM-NEBS                         | [2026_PIM-NEBS](https://github.com/idec-teams/2026_PIM-NEBS)                                              | [idec-teams.github.io/2026_PIM-NEBS](https://idec-teams.github.io/2026_PIM-NEBS)                                      |
+| Evolution Suisse 2026            | [2026_Evolution Suisse 2026](https://github.com/idec-teams/2026_Evolution_Suisse_2026)                                 | [idec-teams.github.io/2026_Evolution Suisse 2026](https://idec-teams.github.io/2026_Evolution_Suisse_2026)                                                |
+| Edinburgh                        | [2026_Edinburgh](https://github.com/idec-teams/2026_Edinburgh)                                             | [idec-teams.github.io/2026_Edinburgh](https://idec-teams.github.io/2026_Edinburgh)                                              |
+| VCA-Prudens                      | [2026_VCA-Prudens](https://github.com/idec-teams/2026_VCA-Prudens)                                           | [idec-teams.github.io/2026_VCA-Prudens](https://idec-teams.github.io/2026_VCA-Prudens)                                             |
+
+
 
 ## iDEC 2025
 | Team                             | Assigned Repository Name                                                                                         | Wiki Site                                                                                                                        |
