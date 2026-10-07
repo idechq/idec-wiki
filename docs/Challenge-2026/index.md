@@ -10,12 +10,12 @@
 }
 .iframe-wrap {
     position: fixed;
-    top: 56px;
+    top: 96px;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
-    height: calc(100vh - 56px);
+    height: calc(100vh - 96px);
     margin: 0;
     padding: 0;
     overflow: hidden;
